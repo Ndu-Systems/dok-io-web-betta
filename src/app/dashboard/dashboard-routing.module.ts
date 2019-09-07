@@ -24,6 +24,7 @@ import { UpdateMedicalAidComponent } from './Medical-aid/update-medical-aid/upda
 import { UpdateEmergencyContactComponent } from './Contact-Person/update-emergency-contact/update-emergency-contact.component';
 import { StaffComponent } from './Dok-staff/staff/staff.component';
 import { PracticesComponent } from './Dok-practices/practices/practices.component';
+import { StatisticsComponent } from './statistics';
 
 const routes: Routes = [
   {
@@ -68,7 +69,8 @@ export const declarations: Array<any> = [
   StaffComponent,
   AddStaffComponent,
   PracticesComponent,
-  AddPracticeComponent
+  AddPracticeComponent,
+  StatisticsComponent
 ];
 
 @NgModule({
