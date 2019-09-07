@@ -1,0 +1,180 @@
+<div class="home" id="home">
+  <section class="navigation">
+    <div class="col-1-of-2">
+      <img src="assets/images/home/logo.png" class="logo" alt="logo image">
+      <ul>
+        <li><a routerLink="">Home</a></li>
+        <!-- <li><a routerLink="">About</a></li>
+        <li><a routerLink="">How it works</a></li> -->
+        <li><a routerLink="sign-in">sign in</a></li>
+       </ul>
+    </div>
+  </section>
+  <div class="mobile-nav">
+    <div class="logo">
+      <img src="assets/images/home/icon-mobile.svg" alt="">
+    </div>
+    <div class="toggle-btn">
+      <img src="assets/images/home/toggle-menu.svg" (click)="toggleNavMobile()" alt="">
+
+    </div>
+
+  </div>
+  <div class="mobile-menu-items" *ngIf="toggleMobileMenu">
+    <div class="close-btn">
+      <h1>
+        Dok-Io
+      </h1>
+      <img src="assets/images/home/close-nav-btn.svg" (click)="toggleNavMobile()" alt="">
+    </div>
+  <ul>
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="sign-in">Login</a></li>
+        <li><a routerLink="sign-up">Sign Up</a></li>
+       </ul>
+  </div>
+  <div class="home-banner">
+    <div class="header">
+      <h1>
+        <span class="header-small">
+          Personalized patient filing
+        </span>
+        <span class="header-big">
+          <span class="purple">Re</span>-imagined
+        </span>
+        <span class="form-text">
+          Try us now, let us call you back
+        </span>
+      </h1>
+      <form [formGroup]="rForm" class="box form-group" class="dashboard-forms">
+
+        <div class="col-1-of-2">
+          <div class="controls">
+            <label for="mail">Name:</label>
+            <input type="name" class="input-field" id="name" formControlName="name">
+            <div class="alert" *ngIf="!rForm.controls['name'].valid && rForm.controls['name'].touched">
+              Name is required
+            </div>
+          </div>
+          <div class="controls">
+            <label for="mail">Cellphone:</label>
+            <input type="cellphone" class="input-field" id="cellphone" formControlName="cellphone">
+            <div class="alert" *ngIf="!rForm.controls['cellphone'].valid && rForm.controls['cellphone'].touched">
+              CellPhone is required, and must have at least 10 characters to be valid
+            </div>
+
+          </div>
+        </div>
+        <div class="controls">
+          <label for="email">Email:</label>
+          <input type="email" class="input-field" id="email" formControlName="email">
+          <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">
+            Email is required
+          </div>
+        </div>
+        <div class="controls">
+          <input type="submit" value="Submit" class="button" [disabled]="!rForm.valid" />
+        </div>
+      </form>
+      <div class="business-rules">
+        <img src="assets/images/home/business-rules.svg" alt="business rules" class="business-rules">
+      </div>
+    </div>
+    <div class="pc-only">
+      <img src="assets/images/home/laptop-demo.svg" alt="laptop demo">
+    </div>
+  </div>
+
+
+  <section class="our-offering">
+    <div class="col-1-of-2">
+      <h1>
+        <span class="heading">
+          Little to no third-party
+        </span>
+        <span class="caption">
+          Some advanced css3 & html5* Alot
+        </span>
+      </h1>
+    </div>
+    <div class="col-1-of-2 grid-full">
+      <div class="col-1-of-2 grid-full">
+        <h1>
+          <span class="heading about">
+            About
+          </span>
+          <span class="caption about">
+            Paperless process in the place of work
+          </span>
+          <span class="paragraph">
+            We are looking to eradicate the paper process that organizations are knee deep in right now and want to
+            guide
+            them to the 4th industrial revolution.
+          </span>
+        </h1>
+        <h1>
+          <span class="paragraph">
+            We have come up with a solution called dok-io which helps your everyday practitioner manage and record data
+            for their patients on an online system apposed to using the traditional filing and filing cabinet process
+            at
+            an affordable price whiles providing 100% safe & secure software that can be accessed over the internet or
+            installed locally on premises.
+          </span>
+          <img src="assets/images/home/learn more.svg" alt="learn more" class="learn-more">
+        </h1>
+      </div>
+      <img class="pc-only" src="assets/images/home/login.svg" alt="login demo">
+    </div>
+  </section>
+  <section class="our-mvp">
+    <h1>
+      <span class="header">
+        Our MVP Concepts
+      </span>
+    </h1>
+    <div class="col-3">
+      <div> <img src="assets/images/home/mvp1.svg" alt="mvp 1"> </div>
+      <div> <img src="assets/images/home/mvp2.svg" alt="mvp 2"></div>
+      <div> <img src="assets/images/home/mvp3.svg" alt="mvp 3"></div>
+    </div>
+  </section>
+
+  <!-- <section class="your-investment">
+    <h1>
+      <span class="header">
+        Your investment
+      </span>
+    </h1>
+    <div class="col-1-of-2">
+      <img src="assets/images/home/pricing-1.svg" alt="pricing 1">
+      <img src="assets/images/home/pricing-2.svg" alt="pricing 2">
+    </div>
+  </section> -->
+
+  <section class="footer">
+    <div class="contact">
+      <h1>
+        <span class="header">
+          Help us, help you thrive effortlessly
+        </span>
+      </h1>
+      <img src="assets/images/home/contact-button.svg" class="btn-contact" alt="contact us">
+    </div>
+    <hr>
+    <h1 class="powered-by">
+      <span class="powered">powered by</span> www.ndu-systems.net
+    </h1>
+    <p>
+      v{{version}}
+    </p>
+
+  </section>
+
+</div>
+
+<div class="overlay" *ngIf="showModal">
+  <app-login (closeModalAction)="closeModal($event)"></app-login>
+</div>
+<div class="overlay" *ngIf="showSignUp">
+  <app-sign-up (closeModalAction)="showSignUpModal()"></app-sign-up>
+</div>

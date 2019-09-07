@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="419" height="521" viewBox="0 0 419 521">
+  <defs>
+    <filter id="Rectangle_21" x="0" y="0" width="419" height="521" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="pricing-1" transform="translate(-220 -3441)">
+    <g transform="matrix(1, 0, 0, 1, 220, 3441)" filter="url(#Rectangle_21)">
+      <rect id="Rectangle_21-2" data-name="Rectangle 21" width="353" height="455" transform="translate(33 25)" fill="#fdfefe"/>
+    </g>
+    <text id="from" transform="translate(322 3579)" fill="#9c27b0" font-size="17" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="-21.446" y="0">from</tspan></text>
+    <g id="Group_59" data-name="Group 59">
+      <text id="R5000.00" transform="translate(453 3574)" fill="#9c27b0" font-size="37" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="-94.313" y="0">R5000.00</tspan></text>
+      <text id="pm" transform="translate(562 3534)" fill="#9c27b0" font-size="17" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="-14.782" y="0">pm</tspan></text>
+    </g>
+    <g id="Group_61" data-name="Group 61" transform="translate(0 38)">
+      <g id="Rectangle_22" data-name="Rectangle 22" transform="translate(300 3694)" fill="#fff" stroke="#9c27b0" stroke-width="2">
+        <rect width="260" height="78" stroke="none"/>
+        <rect x="1" y="1" width="258" height="76" fill="none"/>
+      </g>
+      <text id="Get_started" data-name="Get started" transform="translate(430 3745)" fill="#9c27b0" font-size="33" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="-93.967" y="0">Get started</tspan></text>
+    </g>
+    <text id="This_is_the_standard_off_the_shelf_offering_which_will_be_incremental_as_the_portal_learns_more_and_more_use_cases_in_the_health_space." data-name="This is the standard off the shelf offering which will be incremental as the portal learns more and more use cases in the health space." transform="translate(326 3624)" fill="#1b2631" font-size="11" font-family="Montserrat-Regular, Montserrat"><tspan x="17.05" y="11">This is the standard off the shelf </tspan><tspan x="3.009" y="25">offering which will be incremental as </tspan><tspan x="3.679" y="39">the portal learns more and more use </tspan><tspan x="34.342" y="53">cases in the health space.</tspan></text>
+  </g>
+</svg>

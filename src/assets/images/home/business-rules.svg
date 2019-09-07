@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="616" height="155" viewBox="0 0 616 155">
+  <g id="business-rules" transform="translate(-269 -909)">
+    <rect id="Rectangle_8" data-name="Rectangle 8" width="616" height="11" transform="translate(269 1053)" fill="#9c27b0"/>
+    <g id="Group_2" data-name="Group 2" transform="translate(-9 -31)">
+      <text id="_7" data-name="7" transform="translate(315 1011)" fill="#fdfefe" font-size="73" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="0" y="0">7</tspan></text>
+      <text id="_" data-name="+" transform="translate(278 995)" fill="#fdfefe" font-size="57" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="0" y="0">+</tspan></text>
+    </g>
+    <text id="Business_rule_Live" data-name="Business rule Live" transform="translate(269 1005)" fill="#fdfefe" font-size="15" font-family="Montserrat-Light, Montserrat" font-weight="300"><tspan x="0" y="15">Business rule </tspan><tspan x="0" y="34">Live</tspan></text>
+  </g>
+</svg>

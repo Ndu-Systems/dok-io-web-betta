@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63.746" height="35.331" viewBox="0 0 63.746 35.331">
+  <g id="login-exit" transform="translate(-1551.016 -157)">
+    <text id="Exit" transform="translate(1569.721 179.699)" fill="#29b6f6" font-size="13" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Exit</tspan></text>
+    <g id="Rectangle_3" data-name="Rectangle 3" transform="translate(1551.016 157)" fill="none" stroke="#29b6f6" stroke-width="2.5">
+      <rect width="63.746" height="35.331" stroke="none"/>
+      <rect x="1.25" y="1.25" width="61.246" height="32.831" fill="none"/>
+    </g>
+  </g>
+</svg>

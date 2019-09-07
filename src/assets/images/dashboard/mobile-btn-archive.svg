@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="53" viewBox="0 0 53 53">
+  <defs>
+    <filter id="Ellipse_13" x="0" y="0" width="53" height="53" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="mobile-btn-archive" transform="translate(-279 -420)">
+    <g id="Group_203" data-name="Group 203">
+      <g id="Group_201" data-name="Group 201" transform="translate(44 1)">
+        <g transform="matrix(1, 0, 0, 1, 235, 419)" filter="url(#Ellipse_13)">
+          <circle id="Ellipse_13-2" data-name="Ellipse 13" cx="17.5" cy="17.5" r="17.5" transform="translate(44 6) rotate(90)" fill="#f6f9fc"/>
+        </g>
+        <circle id="Ellipse_29" data-name="Ellipse 29" cx="16.5" cy="16.5" r="16.5" transform="translate(278 426) rotate(90)" fill="#29b6f6"/>
+      </g>
+      <g id="garbage_can-SyBZ_xRQE" data-name="garbage can-SyBZ_xRQE" transform="translate(299 434)">
+        <g id="Group_33" data-name="Group 33">
+          <path id="Path_8" data-name="Path 8" d="M12.043,4.608H1c-.267,0-.34.117-.34.332V18.218a.347.347,0,0,0,.34.215H12.043c.261,0,.475-.116.475-.333V4.886c0-.216-.214-.278-.475-.278ZM3.951,16.129a.33.33,0,0,1-.326.333H2.961a.33.33,0,0,1-.325-.333V6.912a.33.33,0,0,1,.325-.333h.664a.33.33,0,0,1,.326.333s0,9.216,0,9.216Zm3.294,0a.331.331,0,0,1-.326.333H6.255a.331.331,0,0,1-.326-.333V6.912a.33.33,0,0,1,.326-.333h.664a.331.331,0,0,1,.326.333v9.216Zm3.293,0a.33.33,0,0,1-.324.333H9.55a.33.33,0,0,1-.326-.333V6.912A.33.33,0,0,1,9.55,6.58h.664a.33.33,0,0,1,.324.333v9.216ZM5.273,2.3v-.99H7.9V2.3H9.224v-.99A1.318,1.318,0,0,0,7.9,0H5.273A1.318,1.318,0,0,0,3.951,1.314V2.3Zm7.57.333H.333a.324.324,0,0,0-.326.326v.664a.323.323,0,0,0,.326.324H12.842a.323.323,0,0,0,.326-.324V2.962a.324.324,0,0,0-.325-.325Z" transform="translate(-0.007)" fill="#f6f9fc"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

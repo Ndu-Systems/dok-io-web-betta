@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="229" height="38.627" viewBox="0 0 229 38.627">
+  <g id="btn-add-patient" transform="translate(-1500 -143)">
+    <rect id="Rectangle_13" data-name="Rectangle 13" width="229" height="38.627" rx="19.313" transform="translate(1500 143)" fill="#29b6f6"/>
+    <g id="Group_11" data-name="Group 11" transform="translate(1539.546 149.438)">
+      <text id="ADD_PATIENT" data-name="ADD PATIENT" transform="translate(54.261 15.759)" fill="#fdfefe" font-size="13" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">ADD PATIENT</tspan></text>
+      <g id="Group_10" data-name="Group 10" transform="translate(0)">
+        <g id="Ellipse_7" data-name="Ellipse 7" fill="none" stroke="#fdfefe" stroke-width="1">
+          <circle cx="11.036" cy="11.036" r="11.036" stroke="none"/>
+          <circle cx="11.036" cy="11.036" r="10.536" fill="none"/>
+        </g>
+        <line id="Line_5" data-name="Line 5" x2="18.394" transform="translate(2.299 11.496)" fill="none" stroke="#fdfefe" stroke-width="1"/>
+        <line id="Line_6" data-name="Line 6" x2="18.394" transform="translate(11.496 2.299) rotate(90)" fill="none" stroke="#fdfefe" stroke-width="1"/>
+      </g>
+    </g>
+  </g>
+</svg>

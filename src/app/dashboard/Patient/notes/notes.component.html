@@ -1,0 +1,45 @@
+<div class="main-notes">
+  <div class="head">
+    <h1>Patient Notes</h1>
+    <button class="btn primary-add" (click)="showModal()"><i class="fas fa-plus"></i> note</button>
+  </div>
+
+  <div class="table-container" *ngIf="notes$ | async as  notes; else nonotes">
+    <div class="wrap">
+      <div class="table-wrapper">
+        <table class="table-responsive card-list-table">
+          <thead>
+            <tr>
+              <th>note</th>
+              <th>prescription given</th>
+              <th>date</th>          
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let data of notes | filter: searchText | paginate: { itemsPerPage: 10, currentPage: p }">
+              <td data-title="note" class="note-box">
+                {{data.Notes}}
+              <td data-title="prescription">
+                <span *ngIf="data.prescriptionGiven == 1">Yes</span>
+                <span *ngIf="data.prescriptionGiven == 0">No</span>
+              </td>
+              <td data-title="date">  {{data.CreateDate}}</td>           
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="paging">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+      </div>
+    </div>
+  </div>
+  <ng-template #nonotes>
+    <div class="empty-list">
+      <h1>No Patient Notes Available </h1>
+    </div>
+  </ng-template>
+  <div class="overlay" *ngIf="showAddNotes">
+    <app-add-note [PatientId]="PatientId" [Name]="Name" (closeModalAction)="closeModal($event)"></app-add-note>
+  </div>
+
+</div>

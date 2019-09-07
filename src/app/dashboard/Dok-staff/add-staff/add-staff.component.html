@@ -1,0 +1,94 @@
+<section class="modal shadow-black">
+  <section class="modal-header">
+    <ul>
+      <li class="active">
+        <a>ADD STAFF</a>
+      </li>
+      <li>
+        <a></a>
+      </li>
+      <li>
+        <a></a>
+      </li>
+      <li class="exit">
+        <img src="assets/images/dashboard/btn-exit.png" (click)="closeModal()" class="img-btn" alt="">
+      </li>
+    </ul>
+  </section>
+  <section class="popup-body">
+    <form [formGroup]="rForm" (ngSubmit)="addStaff(rForm.value)" action="" class="dashboard-forms">
+      <div class="col-1-of-3">
+        <div class="controls">
+          <label for="">Title</label> <br />
+          <select class="input-field" formControlName="Title">
+            <option value="Mr">Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+            <option value="Dr">Dr</option>
+            <option value="Prof">Prof</option>
+          </select>
+          <div class="alert" *ngIf="!rForm.controls['Title'].valid">
+            Title is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">First Name</label> <br />
+          <input type="text" class="input-field" formControlName="FirstName" />
+          <div class="alert" *ngIf="!rForm.controls['FirstName'].valid">
+            First Name is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">Surname</label> <br />
+          <input type="text" class="input-field" formControlName="Surname" />
+          <div class="alert" *ngIf="!rForm.controls['Surname'].valid">
+            Surname is required
+          </div>
+        </div>
+      </div>
+      <div class="col-1-of-3">
+        <div class="controls">
+          <label for="">Gender</label> <br />
+          <select class="input-field" formControlName="Gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+          <div class="alert" *ngIf="!rForm.controls['Gender'].valid">
+            Gender is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">ID Number</label> <br />
+          <input type="number" class="input-field" formControlName="IdNumber" />
+          <div class="alert" *ngIf="!rForm.controls['IdNumber'].valid">
+            ID Number is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">Phone Number</label> <br />
+          <input type="text" class="input-field" formControlName="PhoneNumber" />
+          <div class="alert" *ngIf="!rForm.controls['PhoneNumber'].valid">
+            Phone Number is required
+          </div>
+        </div>
+      </div>
+      <div class="col-1-of-3">
+
+        <div class="controls">
+          <label for="">Email</label> <br />
+          <input type="email" class="input-field" formControlName="Email" />
+          <div class="alert" *ngIf="!rForm.controls['Email'].valid">
+            Email is required
+          </div>
+        </div>
+      </div>
+      <div class="controls float-right">
+        <input type="submit" value="Save" class="button" [disabled]="!rForm.valid" />
+      </div>
+      <div class="error">
+        {{error}}
+      </div>
+    </form>
+  </section>
+</section>
+<p-toast></p-toast>

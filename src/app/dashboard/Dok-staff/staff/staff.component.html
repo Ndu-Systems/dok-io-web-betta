@@ -1,0 +1,60 @@
+<section class="main">
+    <section class="section-main">
+      <div class="table-heading col-1-of-3">
+        <h1>
+           my  Staff
+        </h1>
+        <div class="filters dashboard-forms pc-only">
+          <label> Search by :</label>
+          <input type="text" placeholder="Email, Firstname, Patient number" class="input-field" [(ngModel)]="searchText"
+            [ngModelOptions]="{standalone: true}" />
+        </div>
+        <div class="filters pc-only">
+          <label> Sort By :</label>
+          <select name="" id="">
+            <option value="">
+              Create Date
+            </option>
+          </select>
+        </div>
+      </div>
+      <div class="add">
+          <button class="btn primary-add"  (click)="showModal()" ><i class="fas fa-plus"></i> Staff</button>   
+
+      </div>
+      <div class="table-container">
+          <div class="wrap">
+            <div class="table-wrapper">
+              <table class="table-responsive card-list-table"  *ngIf=" staff$ | async as  staff">
+                <thead>
+                  <tr>
+                    <th>full name</th>                 
+                    <th>email</th>
+                    <th>cellphone</th>               
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    *ngFor="let data of staff | filter: searchText | paginate: { itemsPerPage: 10, currentPage: p }">
+                    <td data-title="full name" class="full-name">
+                        {{data.Title}} {{data.FirstName}} {{data.Surname}}
+                      <span>{{data.CreateDate}}</span></td>
+                   
+                    <td data-title="email"> {{data.Email}}</td>
+                    <td data-title="cellphone">   {{data.PhoneNumber}}</td>                   
+                     
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="paging">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+              </div>
+          </div>
+        </div>
+    </section>
+  
+  </section>
+  <div class="overlay" *ngIf="showAddStaff">
+      <app-add-staff  (closeModalAction)="closeModal($event)"></app-add-staff>
+    </div>

@@ -1,0 +1,96 @@
+<section class="modal shadow-black">
+  <section class="modal-header">
+    <ul>
+      <li>
+
+      </li>
+      <li>
+
+      </li>
+      <li>
+
+      </li>
+      <li class="exit">
+        <img src="assets/images/dashboard/btn-exit.png" (click)="closeModal()" class="img-btn" alt="">
+      </li>
+    </ul>
+  </section>
+  <section class="popup-body">
+    <form [formGroup]="rForm" (ngSubmit)="proccessdata(rForm.value)" class="box form-group" class="dashboard-forms">
+      <div class="col-1-of-3">
+        <div class="controls">
+          <label for="">Symptoms</label> <br />
+          <input type="text" class="input-field" formControlName="symptoms" />
+          <div class="alert" *ngIf="!rForm.controls['symptoms'].valid && rForm.controls['symptoms'].touched">
+            Symptoms is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">Diagnosis</label> <br />
+          <input type="text" class="input-field" formControlName="diagnosis" />
+          <div class="alert" *ngIf="!rForm.controls['diagnosis'].valid && rForm.controls['diagnosis'].touched">
+            Diagnosis is required
+          </div>
+        </div>
+        <div class="image-div">
+          <img src="../assets/images/dashboard/user-more.svg" alt="">
+        </div>
+      </div>
+
+      <div class="col-1-of-3">
+        <div class="controls">
+          <label for="">Blood Preasure</label> <br />
+          <input type="text" class="input-field" formControlName="boolPreasure" />
+          <div class="alert" *ngIf="!rForm.controls['boolPreasure'].valid && rForm.controls['boolPreasure'].touched">
+            Blood Preasure is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">Pulse Rate</label> <br />
+          <input type="text" class="input-field" formControlName="pulseRate" />
+          <div class="alert" *ngIf="!rForm.controls['pulseRate'].valid && rForm.controls['pulseRate'].touched">
+            Pulse Rate is required
+          </div>
+        </div>
+
+      </div>
+
+      <div formArrayName="drugs" class="drugs">
+        <h1>
+          Drugs
+        </h1>
+        <div *ngFor="let drug of formDrugs.controls; let i=index" [formGroupName]="i">
+          <div class="col-1-of-3">
+            <div class="controls">
+              <label for="">DRUG</label> <br />
+              <!-- <input type="text" class="input-field" formControlName="medicationId" /> -->
+              <p-autoComplete formControlName="medicationId"  [suggestions]="results"
+                (completeMethod)="search($event)"></p-autoComplete>
+
+            </div>
+            <div class="controls">
+              <label for="">Unit</label> <br />
+              <input type="text" class="input-field" formControlName="unit" />
+            </div>
+
+            <div class="controls">
+              <label for="">Dosage</label> <br />
+              <input type="text" class="input-field" formControlName="dosage" />
+            </div>
+            <div class="controls btn-remove">
+                <button class="btn warning" type="button" (click)="deleteDrug(i)"  ><i class="fas fa-trash"></i> remove</button>
+            </div>
+          </div>
+        </div>
+
+          <button class="btn primary-add" type="button"  (click)="addDrug()" ><i class="fas fa-plus"></i> drug</button>
+
+
+      </div>
+
+      <div class="controls">
+        <input type="submit" value="Add Prescription" class="button" [disabled]="!rForm.valid" />
+      </div>
+    </form>
+  </section>
+</section>

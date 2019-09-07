@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="205" height="51" viewBox="0 0 205 51">
+  <defs>
+    <radialGradient id="radial-gradient" cx="-0.086" cy="1.078" r="2.857" gradientTransform="matrix(0.246, -0.147, 0.009, 0.246, -0.075, 0.8)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9c27b0"/>
+      <stop offset="1" stop-color="#29b6f6"/>
+    </radialGradient>
+  </defs>
+  <g id="learn_more" data-name="learn more" transform="translate(-538 -768)">
+    <path id="Path_10" data-name="Path 10" d="M25.5,0h154a25.5,25.5,0,0,1,0,51H25.5a25.5,25.5,0,0,1,0-51Z" transform="translate(538 768)" fill="url(#radial-gradient)"/>
+    <text id="Learn_More-2" data-name="Learn More" transform="translate(566 803)" fill="#fdfefe" font-size="26" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Learn More</tspan></text>
+  </g>
+</svg>

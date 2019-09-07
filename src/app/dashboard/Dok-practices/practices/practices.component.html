@@ -1,0 +1,57 @@
+<section class="main">
+    <section class="section-main">
+      <div class="table-heading col-1-of-3">
+        <h1>
+           my  practices
+        </h1>
+        <div class="filters dashboard-forms pc-only">
+          <label> Search by :</label>
+          <input type="text" placeholder="Email, Firstname, Patient number" class="input-field" [(ngModel)]="searchText"
+            [ngModelOptions]="{standalone: true}" />
+        </div>
+        <div class="filters pc-only">
+          <label> Sort By :</label>
+          <select name="" id="">
+            <option value="">
+              Create Date
+            </option>
+          </select>
+        </div>
+      </div>
+  
+      <div class="table-container">
+          <div class="wrap">
+              <div class="add">
+                  <button class="btn primary-add"  (click)="showModal()" ><i class="fas fa-plus"></i> Practice</button>   
+              </div>
+            <div class="table-wrapper">
+              <table class="table-responsive card-list-table" *ngIf=" practices$ | async as  practices">
+                <thead>
+                  <tr>
+                    <th>name</th>
+                    <th>address</th>                     
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr
+                    *ngFor="let data of practices  | filter: searchText | paginate: { itemsPerPage: 10, currentPage: p }">
+                    <td data-title="name" class="full-name">
+                        {{data.Name}}</td>
+                    <td data-title="address">
+                        {{data.Address}}
+                       </td>
+                     
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="paging">
+                <pagination-controls (pageChange)="p = $event"></pagination-controls>
+              </div>
+          </div>
+        </div>
+    </section>
+  </section>
+<div class="overlay" *ngIf="showAddPractice">
+    <app-add-practice  (closeModalAction)="closeModal($event)"></app-add-practice>
+  </div>

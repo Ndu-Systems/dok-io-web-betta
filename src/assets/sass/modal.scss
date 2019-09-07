@@ -1,0 +1,59 @@
+.modal {
+  position: absolute;
+  left: 15%;
+  top: 15%;
+  width: 70%;
+  height: auto;
+  z-index: 100;
+  background: #ffffff;
+  animation: animationFadeIn 1s ease-out 0s;
+  animation-fill-mode: backwards;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+  .modal-header {
+    background: #29b6f6;
+    padding-top: 0.3rem;
+
+    ul {
+      list-style: none;
+      width: 100%;
+
+      li {
+        display: inline-block;
+        width: 25%;
+        text-align: center;
+        padding: 0.7rem;
+
+        a {
+          color: rgb(209, 214, 214);
+          cursor: pointer;
+        }
+      }
+
+      .active {
+        border-bottom: 0.3rem solid rgb(248, 248, 248);
+
+        a {
+          color: #fff;
+        }
+      }
+      .anabled {
+        a {
+          color: #fff;
+        }
+      }
+
+      .exit {
+        text-align: right;
+
+        img {
+          width: 5rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

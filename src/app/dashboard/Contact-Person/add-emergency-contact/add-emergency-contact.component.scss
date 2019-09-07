@@ -1,0 +1,16 @@
+.popup-body{
+    padding: 4rem;
+}
+.image-div {
+    text-align: left;
+    padding-top: 1%;
+   
+  }
+  .skip{
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+
+  .col-1-of-4 {
+    grid-template-columns: repeat(4,auto);
+  }

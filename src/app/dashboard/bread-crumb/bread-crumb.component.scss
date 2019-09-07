@@ -1,0 +1,25 @@
+.bread-crumb {
+  width: 100%;
+  padding: 2%;
+  background: #fff;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline;
+      padding: .5rem 3rem;
+
+      a {
+        padding: 1%;
+        font-size: 1.2rem;
+      }
+
+      .active-true {
+        color: #29B6F6;
+        border-bottom: .2rem solid #29B6F6;
+      }
+
+    }
+  }
+}

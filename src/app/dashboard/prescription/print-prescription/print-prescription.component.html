@@ -1,0 +1,119 @@
+<section class="modal shadow-black">
+  <section class="modal-header">
+    <div class="col-1-of-2">
+      <div></div>
+      <div>
+        <img src="assets/images/dashboard/btn-exit.png" class="img-btn" alt="exit-modal-button" (click)="closeModal()">
+      </div>
+    </div>
+  </section>
+  <section class="popup-body" id="contentToConvert">
+    <div class="header">
+      <div class="col-1-of-2">
+        <div>
+          <h1>
+            <span class="header-text">
+              {{currentUser.Title}}. {{currentUser.Surname}}
+            </span>
+            <span class="text">
+              Eyethu House <br> Johannesburg
+            </span>
+            <span class="text">
+              j.doe@dokio.net <br>
+              +27 11 05050120
+            </span>
+          </h1>
+        </div>
+        <div>
+          <!-- -->
+        <img src="assets/images/dashboard/logo-blue.svg" alt="logo" class="image"> 
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="body">
+      <div class="col-1-of-2">
+        <div *ngIf="patient">
+          <h4>Prescribed To</h4>
+          <h1>
+            <span class="header-text">
+              {{patient.FirstName}} {{patient.Surname}} 
+            </span>
+            <span class="text">
+                {{patient.IdNumber}}<br>
+                {{patient.Cellphone}}<br>
+                {{patient.Email}}          
+            </span>
+            <span class="text">
+                {{patient.AddressLine1}}<br>
+                {{patient.City}}<br>
+                {{patient.PostCode}}          
+            </span>
+          </h1>
+        </div>
+        <div *ngIf="prescription">
+          <h1>
+            <span class="header-text">
+                {{prescription.diagnosis}}
+            </span>
+            <span class="text">
+              Prescribed on:   {{prescription.createdate}}
+            </span>
+          </h1>
+        </div>
+      </div>
+      <section class="medication-main" *ngIf="drugs; else nomedicine">
+        <div class="col-1-of-2">
+          <h4>Medicine (drug) administered</h4>
+        </div>
+        <div class="table-container">
+            <div class="wrap">
+              <div class="table-wrapper">
+                <table class="table-responsive card-list-table">
+                  <thead>
+                    <tr>
+                      <th>drug</th>
+                      <th>units </th>
+                      <th>dosage</th>                  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                    *ngFor="let item of drugs">
+                      <td data-title="drug" class="full-name">
+                          {{item.name}}
+                      </td>
+                      <td data-title="units">
+                          {{item.unit}}
+                      </td>
+                      <td data-title="dosage">   {{item.dosage}} times per day</td>                    
+                    </tr>
+                  </tbody>
+                </table>
+              </div>               
+            </div>
+          </div>
+        <div class="col-1-of-2 thank-you">
+          <h1>Thank You</h1>
+        </div>
+      </section>
+      <section class="footer">    
+            <p>
+                Prescription was created on a computer and is valid without the signature and seal. 
+            </p>
+        
+      </section>
+      <ng-template #nomedicine>
+        <div class="info">
+          <h1>No Medication was </h1>
+        </div>
+      </ng-template>
+    </div>
+
+    
+  </section>
+  <section class="print"> 
+    <button class="btn primary-add" type="button"  (click)="print()" ><i class="fas fa-print"></i> print prescription</button>   
+    
+  </section>
+</section>

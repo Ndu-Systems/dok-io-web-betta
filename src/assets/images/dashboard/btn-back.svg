@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="89.165" height="24" viewBox="0 0 89.165 24">
+  <g id="btn-back" transform="translate(-222.835 -27)">
+    <text id="Back" transform="translate(261 46)" fill="#f6f9fc" font-size="20" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Back</tspan></text>
+    <g id="Group_44" data-name="Group 44" transform="translate(222.835 30)">
+      <g id="arrow_key-r1hyrg07E" data-name="arrow key-r1hyrg07E" transform="translate(11.007) rotate(90)">
+        <g id="Group_27" data-name="Group 27">
+          <path id="Path_6" data-name="Path 6" d="M2.083,0,8.925,6.842,15.768,0,17.85,2.082,8.925,11.007,0,2.082Z" fill="#f6f9fc" fill-rule="evenodd"/>
+        </g>
+      </g>
+      <line id="Line_9" data-name="Line 9" x2="23.164" transform="translate(2.928 8.921)" fill="none" stroke="#f6f9fc" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="274.326" height="68.247" viewBox="0 0 274.326 68.247">
+  <defs>
+    <radialGradient id="radial-gradient" cx="-0.086" cy="1.078" r="2.857" gradientTransform="matrix(0.246, -0.147, 0.009, 0.246, -0.075, 0.8)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9c27b0"/>
+      <stop offset="1" stop-color="#29b6f6"/>
+    </radialGradient>
+  </defs>
+  <g id="contact-button" transform="translate(-537 -768)">
+    <path id="Path_10" data-name="Path 10" d="M34.123,0H240.2a34.123,34.123,0,0,1,0,68.247H34.123A34.123,34.123,0,0,1,34.123,0Z" transform="translate(537 768)" fill="url(#radial-gradient)"/>
+    <text id="Contact_Us" data-name="Contact Us" transform="translate(570 816)" fill="#fdfefe" font-size="37" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">Contact Us</tspan></text>
+  </g>
+</svg>

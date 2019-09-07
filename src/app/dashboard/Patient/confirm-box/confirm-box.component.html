@@ -1,0 +1,38 @@
+<section class="modal shadow-black">
+  <section class="modal-header">
+    <ul>
+      <li class="active">
+        <a>ARCHIVE PATIENT</a>
+      </li>
+      <li >
+        <a ></a>
+      </li>
+      <li >
+        <a></a>
+      </li>
+      <li class="exit">
+        <img src="assets/images/dashboard/btn-exit.png" (click)="closeModal()" class="img-btn" alt="">
+      </li>
+    </ul>
+  </section>
+  <section class="popup-body">
+    <div class="col-1-of-2">
+        <h1>
+            We hope you know what you are doing?
+           </h1>
+           <img src="../../../../assets/images/dashboard/archive-icon.svg" alt="">
+    </div>
+   
+   <p>
+    {{actionString}}
+   </p>
+   <h1 class="question">
+    PROCEED?
+   </h1>
+
+   <button (click)="confirm()">
+    ARCHIVE
+   </button>
+  </section>
+ </section>
+ 

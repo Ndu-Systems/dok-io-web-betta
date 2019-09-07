@@ -1,0 +1,55 @@
+<section class="modal shadow-black">
+  <section class="modal-header">
+    <ul>
+      <li>
+        <a>REGISTER PATIENT</a>
+      </li>
+      <li  class="anabled">
+        <a (click)="goBanckOnce()" >MEDICAL INFO</a>
+      </li>
+      <li class="active">
+        <a>EMERGENCY CONTACTS</a>
+      </li>
+      <li class="exit">
+        <img src="assets/images/dashboard/btn-exit.png" (click)="closeModal()" class="img-btn" alt="">
+      </li>
+    </ul>
+  </section>
+  <section class="popup-body">
+    <form [formGroup]="rForm" (ngSubmit)="addcontact(rForm.value)" class="box form-group" class="dashboard-forms">
+
+      <div class="col-1-of-4">
+        <div class="controls">
+          <label for="">Name</label> <br />
+          <input type="text" class="input-field" formControlName="Name" />
+          <div class="alert" *ngIf="!rForm.controls['Name'].valid">
+             Name is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">Relationship</label> <br />
+          <input type="text" class="input-field" formControlName="Relationship" />
+          <div class="alert" *ngIf="!rForm.controls['Relationship'].valid">
+              Relationship is required
+          </div>
+        </div>
+        <div class="controls">
+          <label for="">Contact no.</label> <br />
+          <input type="text" class="input-field" formControlName="CellNumber" />
+          <div class="alert" *ngIf="!rForm.controls['CellNumber'].valid">
+              Contact no. is required
+          </div>
+        </div>
+        <div class="image-div pc-only">
+          <img src="assets/images/dashboard/emegency.svg" alt="">
+        </div>
+      </div>
+      <div class="controls">
+        <input type="submit" value="SUBMIT" class="button" [disabled]="!rForm.valid" />
+      </div>
+      <div class="controls skip">
+          <a (click)="goBanckOnce()">Go back to add medical aid</a>
+        </div>
+    </form>
+  </section>
+</section>

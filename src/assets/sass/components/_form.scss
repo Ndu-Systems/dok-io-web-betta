@@ -1,0 +1,49 @@
+.form {
+  border-radius: 5px;
+  background: transparent;
+  padding: 3rem;
+
+  .form-group {
+    margin-bottom: 0.5em;
+  }
+  label {
+    text-transform: capitalize;
+    color: lighten($color: $grey-dark-color, $amount: 0.1);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid lighten($color: $grey-color, $amount: 0.1);
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    resize: vertical;
+    &:focus {
+      border-radius: 15px;
+    }
+  }
+
+  input[type="submit"] {
+    background: #dee5ed;
+    color: #000;
+    border-radius: 1000em;
+    padding: 0.5em 1.5em;
+     cursor: "pointer";
+  }
+
+  input[type="submit"]:hover {
+    background-color: $green-light-color;
+    cursor: "pointer";
+  }
+}
+
+

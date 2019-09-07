@@ -1,0 +1,95 @@
+<section class="main">
+  <app-bread-crumb [items]="items"></app-bread-crumb>
+  <section class="section-main">
+    <section class="header-content">
+      <div class="panel col-1-of-3" *ngIf="patient">
+        <div>
+          <h1> {{patient.FirstName}} {{patient.Surname}} </h1>
+        </div>
+        <div *ngIf="patient.MemberShipNumber; else nomembership">
+          <h1>Membership # {{patient.MemberShipNumber}}</h1>
+        </div>
+        <ng-template #nomembership>
+          <div class="empty-list">
+            <h1>No Medical Aid</h1>
+          </div>
+        </ng-template>
+        <div class="pc-only">
+          <img src="assets/images/dashboard/user-more.svg" alt="user icon">
+        </div>
+      </div>
+    </section>
+    <section class="section-user-details">
+      <div class="table-header col-1-of-2">
+        <h1>
+          Prescriptions
+        </h1>
+        <!-- <button class="btn primary-add img-btn" type="button" (click)="openModal()"><i class="fas fa-plus"></i>
+          prescription</button> -->
+
+          <div class="add-prescripytion">
+            <button class="btn primary-add img-btn"  (click)="openModal()"><i class="fas fa-plus"></i> 
+              prescription</button>
+          </div>
+      </div>
+      <!-- <div *ngIf="prescriptions$ | async as  prescriptions"> -->
+      <div class="table-container" *ngIf="prescriptions; else noprescriptions">
+        <div class="wrap">
+          <div class="table-wrapper">
+            <table class="table-responsive card-list-table">
+              <thead>
+                <tr>
+                  <th>symptoms</th>
+                  <th>diagnosis</th>
+                  <th>prescription given</th>
+                  <th>actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr
+                  *ngFor="let data of prescriptions.PatientPrescriptions | paginate: { itemsPerPage: 5, currentPage: p }">
+                  <td data-title="symptoms" class="full-name">
+                    {{data.symptoms}}
+                  </td>
+                  <td data-title="diagnosis">
+                    {{data.diagnosis}}
+                  </td>
+                  <td data-title="prescription"> Yes</td>
+                  <td data-title="actions">
+                    <div class="btn-group">
+                      <div class="btns">
+                        <a (click)="viewPrescription(data)"><img src="assets/images/dashboard/btn-search.svg"
+                            class="img-btn" alt=""></a>
+                      </div>
+                      <div class="btns">
+                        <img src="assets/images/dashboard/btn-edit.svg" class="img-btn" alt="">
+                      </div>
+                      <div class="btns">
+                        <img src="assets/images/dashboard/btn-delete.svg" class="img-btn" alt="">
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="paging">
+            <pagination-controls (pageChange)="p = $event"></pagination-controls>
+          </div>
+        </div>
+      </div>
+      <ng-template #noprescriptions>
+        <div class="empty-list">
+          <h1>No Prescriptions available for Patient </h1>
+        </div>
+      </ng-template>
+      <!-- </div> -->
+
+    </section>
+  </section>
+</section>
+
+
+<div class="overlay" *ngIf="showAddPrescriptionModal">
+  <app-add-prescription [patientId]="patientId" (closeModalAction)="closeModal($event)"></app-add-prescription>
+</div>

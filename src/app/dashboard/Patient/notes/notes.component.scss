@@ -1,0 +1,14 @@
+.main-notes {
+  .head {
+    display: grid;
+    grid-template-columns: 80% auto;
+    @media only screen and (max-width: 600px) {
+    grid-template-columns: 50% auto;
+      }
+  }
+
+  .btn {
+ 
+  }
+}
+

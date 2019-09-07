@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100.375" height="30.038" viewBox="0 0 100.375 30.038">
+  <g id="btn-logout" transform="translate(-246 -612)">
+    <text id="Log_out" data-name="Log out" transform="translate(246 633)" fill="#f6f9fc" font-size="15" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Log out</tspan></text>
+    <g id="application-BJtLPQk4E" transform="translate(323.546 612)">
+      <g id="Group_105" data-name="Group 105" transform="translate(0 0)">
+        <path id="Path_18" data-name="Path 18" d="M.6,0H22.228a.6.6,0,0,1,.6.6V29.437a.6.6,0,0,1-.6.6H.6a.6.6,0,0,1-.6-.6V.6A.6.6,0,0,1,.6,0Zm9.612,15.62h5.759L13.393,18.2a.6.6,0,1,0,.849.849l3.6-3.6a.6.6,0,0,0,0-.849l-3.6-3.6a.6.6,0,1,0-.849.849l2.579,2.579H10.213a.6.6,0,0,0,0,1.2Z" transform="translate(0)" fill="#f6f9fc" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

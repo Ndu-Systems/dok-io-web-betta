@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1786" height="937.199" viewBox="0 0 1786 937.199">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.049" cy="0.727" r="2.7" gradientTransform="matrix(0.521, -0.276, 0.053, 0.34, -0.015, 0.493)" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9c27b0"/>
+      <stop offset="1" stop-color="#e91e63"/>
+    </radialGradient>
+    <radialGradient id="radial-gradient-2" cx="0.092" cy="0.976" r="1.427" gradientTransform="matrix(0.655, -0.308, 0.095, 0.428, -0.061, 0.587)" xlink:href="#radial-gradient"/>
+    <filter id="Back-ground" x="0" y="0" width="1055.041" height="767.659" filterUnits="userSpaceOnUse">
+      <feOffset dy="11" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="22" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <radialGradient id="radial-gradient-3" cx="0.092" cy="0.976" r="1.331" gradientTransform="matrix(0.702, -0.308, 0.11, 0.459, -0.079, 0.557)" xlink:href="#radial-gradient"/>
+    <filter id="Back-ground-2" x="9.082" y="0" width="1001.941" height="774.133" filterUnits="userSpaceOnUse">
+      <feOffset dy="11" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="22" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="investment-bg" transform="translate(66 -242.818)">
+    <path id="Back-ground-3" data-name="Back-ground" d="M0,248.334l1720,70.053v861.63L0,870.072Z" fill="url(#radial-gradient)"/>
+    <g transform="matrix(1, 0, 0, 1, -66, 242.82)" filter="url(#Back-ground)">
+      <path id="Back-ground-4" data-name="Back-ground" d="M421.258,411.006,879.023,336.98l44.018,171.691L471.223,711.523,406.484,972.64,0,910.966,320.164,631.678Z" transform="translate(66 -281.98)" opacity="0.6" fill="url(#radial-gradient-2)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -66, 242.82)" filter="url(#Back-ground-2)">
+      <path id="Back-ground-5" data-name="Back-ground" d="M396.965,642.167l36.686-309.38L882.452.035,12.512,138.8,375.385,316.311,12.512,575.27Z" transform="translate(62.57 54.97)" opacity="0.57" fill="url(#radial-gradient-3)"/>
+    </g>
+  </g>
+</svg>

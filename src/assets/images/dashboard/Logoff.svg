@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="193.182" height="34" viewBox="0 0 193.182 34">
+  <g id="Logoff" transform="translate(-1556 -188)">
+    <g id="Group_106" data-name="Group 106" transform="translate(0 1)">
+      <text id="Log_out" data-name="Log out" transform="translate(1556 202)" fill="#78909c" font-size="15" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">Log out</tspan></text>
+      <text id="See_you_again_next_time" data-name="See you again next time" transform="translate(1556 219)" fill="#78909c" font-size="7" font-family="Montserrat-Regular, Montserrat"><tspan x="0" y="0">See you again next time</tspan></text>
+    </g>
+    <g id="application-BJtLPQk4E" transform="translate(1725 190)">
+      <g id="Group_105" data-name="Group 105" transform="translate(0 0)">
+        <path id="Path_18" data-name="Path 18" d="M.636,0H23.545a.637.637,0,0,1,.636.636V31.182a.636.636,0,0,1-.636.636H.636A.636.636,0,0,1,0,31.182V.636A.636.636,0,0,1,.636,0ZM10.818,16.546h6.1l-2.732,2.732a.636.636,0,1,0,.9.9L18.9,16.359a.636.636,0,0,0,0-.9l-3.818-3.818a.636.636,0,0,0-.9.9l2.732,2.732h-6.1a.636.636,0,0,0,0,1.273Z" transform="translate(0)" fill="#78909c" fill-rule="evenodd"/>
+      </g>
+    </g>
+  </g>
+</svg>

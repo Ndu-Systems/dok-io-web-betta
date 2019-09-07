@@ -1,0 +1,7 @@
+<section class="bread-crumb">
+  <ul>
+      <li *ngFor="let item of items">
+        <a [routerLink]="[item.url]" class="active-{{item.active}}">{{item.name}}</a>
+      </li>
+  </ul>
+</section>

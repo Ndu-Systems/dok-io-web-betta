@@ -1,0 +1,55 @@
+.modal{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    width: 40%;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        left: 0;
+        top: 35%;
+    }
+
+.popup-body{
+    padding: 5%;
+    text-align: center;
+    color: #78909C;
+    .col-1-of-2{
+        grid-template-columns: 80% auto;
+        h1{
+            font-weight: 1000;
+        }
+        img{
+            width: 4rem;
+            margin-top: -1rem;
+        }
+    }
+p{
+    padding: 2%;
+    
+}
+    .question{
+       
+            font-weight: 1000;
+            text-transform: uppercase;
+            padding: 3%;
+
+        
+    }
+    button{
+        background: #E91E63;
+        color: #fff;
+        padding: 1rem 3rem;
+        border: none;
+        font-weight: 700;
+        border-radius: 50rem;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover{
+        background: rgb(97, 6, 36);
+
+        }
+
+    }
+}
+   
+}

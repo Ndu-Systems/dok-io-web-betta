@@ -1,0 +1,40 @@
+<div class="accounts">
+  <div class="col-1-of-2">
+    <div class="panel">
+      <div class="panel-body">
+
+        <form [formGroup]="rForm" (ngSubmit)="Login()" action="" class="form">
+          <h1 class="panel-header">sign in to dokio</h1>
+          <div class="col-1-of-1">
+            <div class="form-group">
+              <label for="email">email</label> <br />
+              <input type="email" class="input-field" formControlName="email" />
+              <div class="alert" *ngIf="!rForm.controls['email'].valid && rForm.controls['email'].touched">
+                email is required
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="password">password</label> <br />
+              <input type="password" class="input-field" formControlName="password" />
+              <div class="alert" *ngIf="!rForm.controls['password'].valid && rForm.controls['password'].touched">
+                password is required
+              </div>
+            </div>
+          </div>
+          <div class="form-group actions col-1-of-2">
+            <a routerLink="/forgot-password" class="cta forgot-password">forgot password</a>
+            <input type="submit" value="sign-in" class="button" [disabled]="!rForm.valid" />
+          </div>
+        </form>
+        <div class="panel-direct col-1-of-1">
+          <h1 class="paragraph">
+            don't have an account with us?
+          </h1>
+          <a routerLink="/sign-up" class="cta">sign up for a free account</a>
+          <a routerLink="/" class="cta home">take me home</a>
+        </div>
+      </div>
+    </div>
+    <img src="assets/images/home/sign-in-bg.svg" alt="sign-in background" class="side-image">
+  </div>
+</div>

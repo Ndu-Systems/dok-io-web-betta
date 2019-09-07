@@ -1,0 +1,107 @@
+@import '../../../../assets/sass/variables';
+
+.popup-body{
+    // height: 70vh;
+    padding: 3%;
+    padding-top: 0;
+    .header{
+      padding-top: 2%;
+    }
+    .header-text{
+        display: block;
+        font-size: 1.3333rem;
+        font-weight: 400;
+        color: $primary-color;
+    }
+
+    .text{
+        display: block;
+        font-size: 0.95rem;
+        font-weight: 400;
+    }
+    .body{
+        margin-top: 1rem;
+        .col-1-of-2{
+            grid-template-columns: 75% auto;
+        }      
+    }
+
+    
+  .medication-main {
+    padding: 0;
+
+    .table {
+
+      padding: 0;
+      margin-top: 1rem;
+    }
+    .table table tbody tr td {
+        padding: 0rem;
+        padding-top: 1rem;
+    }
+
+    thead tr td{
+        font-size: 1rem;
+        font-weight: 500;
+        border-bottom: 1px solid  $grey-color;
+    }
+    .table-heading {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      padding-left: 2rem;
+      padding-right: 3rem;
+
+      h1 {
+        text-transform: uppercase;
+      }
+
+      .filters {
+        text-align: right;
+
+        label {
+          font-weight: 700;
+          font-size: .8rem;
+        }
+
+        select {
+          background: none;
+          border: none;
+          font-weight: 700;
+          color: #29B6F6;
+          font-size: .8rem;
+        }
+      }
+    }
+
+    .thank-you{
+        margin-top: 2rem;
+    }
+
+   
+  }
+
+  .footer {
+    margin-top: 3rem;
+    padding: 2%;
+    border-top: 1px solid #78909C;
+    text-align: center;
+    font-size: .7rem;
+    text-transform: uppercase;
+    text-decoration: solid;
+}
+    
+}
+
+.print{
+  padding: 2rem;    
+}
+
+.modal {
+  top: 0%;
+
+  .modal-header {
+    img {
+      width: 5rem;
+    }
+  }
+}

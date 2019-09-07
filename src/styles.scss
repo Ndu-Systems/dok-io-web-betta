@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/sass/base";
+@import "assets/sass/grid";
+@import "assets/sass/variables";
+@import "assets/sass/components/form";
+@import "assets/sass/components/feature-box";
+@import "assets/sass/mixins";
+@import "assets/sass/keyframes";
+@import "assets/sass/states";
+@import "assets/sass/components/popup";
+@import "assets/sass/modal";
+@import "assets/sass/table";
+@import "assets/sass/components/mobile-table";
+@import "assets/sass/components/card";
+@import "assets/sass/components/table-container";
+

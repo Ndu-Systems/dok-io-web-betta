@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120.348" height="39.958" viewBox="0 0 120.348 39.958">
+  <g id="logo-blue" transform="translate(-160 -72)">
+    <g id="Rectangle_2" data-name="Rectangle 2" transform="translate(160 72)" fill="none" stroke="#29b6f6" stroke-width="3">
+      <rect width="120.348" height="39.958" rx="19.979" stroke="none"/>
+      <rect x="1.5" y="1.5" width="117.348" height="36.958" rx="18.479" fill="none"/>
+    </g>
+    <g id="Group_120" data-name="Group 120" transform="translate(6.65 1)">
+      <text id="dok-io" transform="translate(174.35 96)" fill="#29b6f6" font-size="16" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="0" y="0">dok-io</tspan></text>
+      <g id="Group_119" data-name="Group 119" transform="translate(-3555 -3734.99)">
+        <path id="Path_21" data-name="Path 21" d="M18.47,22.8a5.981,5.981,0,0,1-11.942-.5V14.687c0-1.286,2.458-2.72,5.984-2.72a.544.544,0,0,0,.544-.544V2.72a1.628,1.628,0,0,0-1.165-1.555A1.629,1.629,0,1,0,11.8,2.333a.54.54,0,0,1,.164.387v8.17c-2.7.106-4.927,1-5.938,2.257a6.364,6.364,0,0,0-4.941-2.254V2.72a.539.539,0,0,1,.164-.387,1.634,1.634,0,1,0-.088-1.168A1.63,1.63,0,0,0,0,2.72v8.7a.544.544,0,0,0,.544.544c2.653,0,4.9,1.246,4.9,2.72V22.3a7.068,7.068,0,0,0,14.117.5C21.411,22.553,16.64,22.523,18.47,22.8Z" transform="translate(3785 3810.99)" fill="#29b6f6"/>
+        <g id="mouse" transform="translate(3777 3808.167)">
+          <g id="Group_118" data-name="Group 118" transform="translate(25 19)">
+            <path id="Path_22" data-name="Path 22" d="M2.448,0A2.448,2.448,0,0,0,0,2.448V5.385a2.448,2.448,0,0,0,4.9,0V2.448A2.448,2.448,0,0,0,2.448,0Zm.49,2.937a.49.49,0,0,1-.979,0V1.469a.49.49,0,0,1,.979,0Z" fill="#29b6f6" fill-rule="evenodd"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

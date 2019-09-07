@@ -1,0 +1,17 @@
+.dashboard {
+  background: $cloud-white-color;
+  border-radius: 15px;
+  height: 99vh;
+  background: green;
+  .col-1-of-2 {
+    grid-template-columns: 20% auto;
+  }
+  .container {
+    background: blue;
+    position: absolute;
+    top: 3rem;
+    left: 15rem;
+    width: 85vw;
+    height: 90vh;
+  }
+}

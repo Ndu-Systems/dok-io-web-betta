@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="419" height="521" viewBox="0 0 419 521">
+  <defs>
+    <filter id="Rectangle_21" x="0" y="0" width="419" height="521" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_23" x="0" y="352" width="419" height="169" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="11" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="pricing-2" transform="translate(-710 -3451)">
+    <g transform="matrix(1, 0, 0, 1, 710, 3451)" filter="url(#Rectangle_21)">
+      <rect id="Rectangle_21-2" data-name="Rectangle 21" width="353" height="455" transform="translate(33 25)" fill="#fdfefe"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 710, 3451)" filter="url(#Rectangle_23)">
+      <rect id="Rectangle_23-2" data-name="Rectangle 23" width="353" height="103" transform="translate(33 377)" fill="#29b6f6"/>
+    </g>
+    <text id="from" transform="translate(811 3589)" fill="#9c27b0" font-size="17" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="-21.446" y="0">from</tspan></text>
+    <g id="Group_59" data-name="Group 59" transform="translate(489 10)">
+      <text id="R7000.00" transform="translate(453 3574)" fill="#9c27b0" font-size="37" font-family="Montserrat-Black, Montserrat" font-weight="800"><tspan x="-94.424" y="0">R7000.00</tspan></text>
+      <text id="pm" transform="translate(562 3534)" fill="#9c27b0" font-size="17" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="-14.782" y="0">pm</tspan></text>
+    </g>
+    <g id="Group_61" data-name="Group 61" transform="translate(489 48)">
+      <rect id="Rectangle_22" data-name="Rectangle 22" width="260" height="78" transform="translate(300 3694)" fill="#9c27b0"/>
+      <text id="Get_started" data-name="Get started" transform="translate(430 3745)" fill="#fdfefe" font-size="33" font-family="Montserrat-Medium, Montserrat" font-weight="500"><tspan x="-93.967" y="0">Get started</tspan></text>
+    </g>
+    <text id="This_is_a_client_driven_package_where_we_add_all_the_tooling_you_require_to_enable_you_to_digitize_your_whole_work_process." data-name="This is a client driven package where we add all the tooling you require to enable you to digitize your whole work process." transform="translate(815 3634)" fill="#1b2631" font-size="11" font-family="Montserrat-Regular, Montserrat"><tspan x="3.817" y="11">This is a client driven package where </tspan><tspan x="5.192" y="25">we add all the tooling you require to </tspan><tspan x="13.519" y="39">enable you to digitize your whole </tspan><tspan x="67.166" y="53">work process.</tspan></text>
+    <text id="Popular" transform="translate(920 3881)" fill="#fdfefe" font-size="32" font-family="Montserrat-Bold, Montserrat" font-weight="700"><tspan x="-65.632" y="0">Popular</tspan></text>
+  </g>
+</svg>

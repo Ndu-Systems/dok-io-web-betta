@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="10" viewBox="0 0 40 10">
+  <g id="btn-3-dots" transform="translate(-1729 -87)">
+    <g id="Ellipse_3" data-name="Ellipse 3" transform="translate(1729 87)" fill="none" stroke="#fdfefe" stroke-width="2.5">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="3.75" fill="none"/>
+    </g>
+    <g id="Ellipse_4" data-name="Ellipse 4" transform="translate(1744 87)" fill="none" stroke="#fdfefe" stroke-width="2.5">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="3.75" fill="none"/>
+    </g>
+    <g id="Ellipse_5" data-name="Ellipse 5" transform="translate(1759 87)" fill="none" stroke="#fdfefe" stroke-width="2.5">
+      <circle cx="5" cy="5" r="5" stroke="none"/>
+      <circle cx="5" cy="5" r="3.75" fill="none"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import "mixins";
+@import "variables";
+@import "./components/accounts";
+@import "./components/dashboard";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 400;
+  font-size: 80%; // 1 rem = 12.8px; therefore 12.8px/16px = 80% Therefore we will decrease by -1px from the base of 12.8px NB: For this project only
+
+  @include responsive(tab-land) {
+    font-size: 73.75%; // 1 rem = 11.8px , 10.8/16 = 67.5%;
+  }
+
+  @include responsive(tab-port) {
+    font-size: 67.5%; // 1 rem = 10.8px  , 10.8/16 = 67.5%;
+  }
+
+  @include responsive(phone) {
+    font-size: 61.25%; // 1 rem = 9.8  , 10.8/16 = 67.5%;
+  }
+
+  @include responsive(big-desktop) {
+    font-size: 100%; // 1 rem = 16px  , 10.8/16 = 67.5%;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1.7;
+  color: $black-color;
+  background-color: $cloud-white-color;
+  padding: 6px 10px;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: 600px) {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .pc-only {
+    display: none;
+  }
+
+  .grid-full {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+
+  &.primary {
+    background: #26c6da;
+    color: #fff;
+  }
+  &.primary-add {
+    background: #29B6F6;
+    color: #fff;
+
+  }
+
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(75, 63, 63, 0.712);
+  animation: animationFadeIn 1s ease-out 0s;
+  animation-fill-mode: backwards;
+  top: 0;
+  left: 0;
+
+  @media only screen and (max-width: 600px) {
+    background: #fff;
+    ;
+
+  }
+}
+
+.shadow-black {
+  -webkit-box-shadow: 10px 10px 32px 1px rgba(89, 89, 89, 1);
+  -moz-box-shadow: 10px 10px 32px 1px rgba(89, 89, 89, 1);
+  box-shadow: 10px 10px 32px 1px rgba(89, 89, 89, 1);
+}
+
+.number-dadge {
+  background: #29b6f6;
+  color: #fff;
+  text-align: center;
+  width: 15rem;
+  // height: 5rem;
+  border-radius: 5rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 auto;
+}
+
+.number-0 {
+  opacity: 0.4;
+}
+
+.aling-center {
+  text-align: center;
+}
+
+.img-btn {
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(0.3rem);
+  }
+}
+
+.image-div {
+  @media only screen and (max-width: 600px) {
+    display: none;
+
+  }
+}
+
+.alert {
+  color: $pink-color;
+  font-size: 0.8rem;
+  font-weight: 400;
+  animation: moveInLeft 1s ease-out 0.5s;
+  animation-fill-mode: backwards;
+}
+
+.no-membership {
+  padding: 20px;
+  background-color: #ff8f00;
+  color: white;
+  width: 50%;
+  opacity: 0.7;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.no-prescription {
+  padding: 20px;
+  background-color: #ff8f00;
+  color: white;
+  width: 50%;
+  opacity: 0.7;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.paging {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+}
+
+.empty-list {
+  padding: 0 2rem;
+
+  h1 {
+    color: #ff8f00;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+}
+
+//scroller bar modification
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $white-color;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $cloud-white-color;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $cloud-white-color;
+}
+
+
+.img-btn-larger {
+  width: 14rem;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    transform: translate(0.3rem);
+  }
+
+}
+
+.btn {
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  padding: 14px 80px;
+  font-size: 16px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 30px;
+  text-transform: capitalize;
+
+  &.warning {
+    background-color: $gold-color;
+
+    &:hover {
+      background: orange;
+    }
+  }
+
+  &.success {
+    background-color: $green-color;
+
+    &:hover {
+      background: green;
+    }
+  }
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: $blue-color;
+}
+
+
+.direction {
+  h1 {
+    .info {
+
+      font-weight: 300;
+    }
+  }
+
+  button {
+    margin-top: 1rem;
+
+  }
+}

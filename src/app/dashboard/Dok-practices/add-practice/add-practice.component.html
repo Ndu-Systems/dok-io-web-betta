@@ -1,0 +1,48 @@
+<section class="modal shadow-black">
+    <section class="modal-header">
+      <ul>
+        <li class="active">
+          <a>ADD PRACTICE</a>
+        </li>
+        <li>
+          <a></a>
+        </li>
+        <li>
+          <a></a>
+        </li>
+        <li class="exit">
+          <img src="assets/images/dashboard/btn-exit.png" (click)="closeModal()" class="img-btn" alt="">
+        </li>
+      </ul>
+    </section>
+    <section class="popup-body">
+      <form [formGroup]="rForm" (ngSubmit)="addPractice(rForm.value)" action="" class="dashboard-forms">
+
+        <div class="col-1-of-2">
+
+          <div class="controls">
+            <label for="">Name</label> <br />
+            <input type="text" class="input-field" formControlName="Name" />
+            <div class="alert" *ngIf="!rForm.controls['Name'].valid">
+                Name is required
+            </div>
+          </div>
+
+          <div class="controls">
+            <label for="">Address</label> <br />
+            <input type="text" class="input-field" formControlName="Address" />
+            <div class="alert" *ngIf="!rForm.controls['Address'].valid">
+                Address is required
+            </div>
+          </div>
+        </div>
+        <div class="controls float-right">
+          <input type="submit" value="Save" class="button" [disabled]="!rForm.valid" />
+        </div>
+        <div class="error">
+          {{error}}
+        </div>
+      </form>
+    </section>
+  </section>
+  <p-toast></p-toast>

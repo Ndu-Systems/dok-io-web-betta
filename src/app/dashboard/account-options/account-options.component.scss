@@ -1,0 +1,36 @@
+@import '../../../assets/sass/variables';
+
+.modal {
+  width: 12%;
+  top: 2rem; 
+  right: 2rem;
+  left: unset;
+
+  .modal-header {
+    h1 {
+      font-size: 1em;
+      padding: 0.3rem;
+      color: $white-color;
+    }
+
+    img {
+      width: 4em;
+      position: absolute;
+      right: 10px;
+      
+    }
+
+    &.col-1-of-2 {
+      grid-gap: 0rem;
+    }
+
+  }
+
+  .popup-body {
+   img {
+    padding: 1rem;
+    padding-top: 0;
+    cursor: pointer;
+   }
+  }
+}

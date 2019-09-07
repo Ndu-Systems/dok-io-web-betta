@@ -1,0 +1,115 @@
+<section class="main">
+  <app-bread-crumb [items]="items"></app-bread-crumb>
+  <section class="section-main">
+    <section class="header-content">
+      <div class="panel col-1-of-3" *ngIf="patient">
+        <div>
+          <h1> {{patient.FirstName}} {{patient.Surname}} </h1>
+        </div>
+        <div *ngIf="patient.MemberShipNumber; else nomembership">
+          <h1>Membership # {{patient.MemberShipNumber}}</h1>
+        </div>
+        <ng-template #nomembership>
+          <div class="empty-list">
+            <h1>No Medical Aid</h1>
+          </div>
+        </ng-template>
+        <div class="pc-only">
+          <img src="assets/images/dashboard/user-more.svg" alt="user icon">
+        </div>
+      </div>
+    </section>
+    <section class="prescription-main">
+      <div *ngIf="prescription; else error">
+        <div class="col-1-of-2">
+          <div>
+            <h1>Prescription</h1>
+          </div>
+          <div  class="pc-only">
+            <img src="assets/images/dashboard/medicine-icon.svg" alt="">
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div>
+            <h1><span class="header-text">Symptom</span>
+              <span class="text">{{prescription[0].symptoms}}</span> </h1>
+          </div>
+
+          <div>
+            <h1><span class="header-text">Blood Pressure</span>
+              <span class="text">{{prescription[0].boolPreasure}}</span></h1>
+          </div>
+        </div>
+        <div class="col-1-of-3">
+          <div>
+            <h1><span class="header-text">Diagnosis</span>
+              <span class="text">{{prescription[0].diagnosis}}</span> </h1>
+          </div>
+
+          <div>
+            <h1><span class="header-text">Pulse rate</span>
+              <span class="text">{{prescription[0].pulseRate}}</span></h1>
+          </div>
+          <div>
+            <h1><span class="header-text">Prescription Date</span>
+              <span class="text">{{prescription[0].createdate}}</span></h1>
+          </div>
+        </div>
+      </div>
+      <section class="medication-main" *ngIf="drugs; else nomedicine">
+        <div class="col-1-of-2">
+          <h1>Medicine (drug) administered</h1>
+        </div>
+        <div class="table-container">
+            <div class="wrap">
+              <div class="table-wrapper">
+                <table class="table-responsive card-list-table">
+                  <thead>
+                    <tr>
+                      <th>drug</th>
+                      <th>units </th>
+                      <th>dosage</th>                  
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr
+                    *ngFor="let item of drugs">
+                      <td data-title="drug" class="full-name">
+                          {{item.name}}
+                      </td>
+                      <td data-title="units">
+                          {{item.unit}}
+                      </td>
+                      <td data-title="dosage">   {{item.dosage}} times per day</td>                    
+                    </tr>
+                  </tbody>
+                </table>
+              </div>               
+            </div>
+          </div>
+      </section>
+      <ng-template #nomedicine>
+        <div class="empty-list">
+          <h1>No Medication was </h1>
+        </div>
+      </ng-template>
+      <ng-template #error>
+        <div class="error">
+          <h1>Oh Snap ! something went wrong please contact system Administrator!</h1>
+        </div>
+      </ng-template>
+    </section>
+    <section class="actions print">
+      <div class="col-1-of-2">      
+        <button class="btn success print-btn" type="button"  (click)="showPrintModal()" ><i class="fas fa-print"></i> print prescription</button>   
+      </div>
+    </section>
+    <div class="overlay" *ngIf="showModal">
+      <app-print-prescription (closeModalAction)="closeModal($event)"
+        [drugs]="drugs"
+        [patient]="patient"
+        [prescription]="prescription[0]"
+      ></app-print-prescription>
+    </div>
+  </section>
+</section>

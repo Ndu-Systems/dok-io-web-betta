@@ -1,0 +1,57 @@
+.table {
+  padding: 2rem;
+  border-collapse: collapse;
+
+
+  table {
+    width: 100%;
+
+    thead {
+      tr{
+        td{
+          font-weight: 600;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        background: #FFFFFF;
+        border-right: none;
+        border-left: none;
+
+        td {
+
+          padding: 1rem;
+
+
+
+          .btn-group {
+            display: grid;
+            grid-template-columns: 30% 30% 30%;
+            column-gap: .3rem;
+
+            .btns {
+              img {
+                width: 2rem;
+              }
+            }
+          }
+
+          .btn-group-4 {
+            grid-template-columns: 25% 25% 25% auto;
+
+          }
+        }
+
+        .full-name {
+          span {
+            display: block;
+            font-size: .7rem;
+            padding: .2rem;
+          }
+        }
+      }
+    }
+  }
+}

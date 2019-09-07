@@ -1,0 +1,48 @@
+.drugs{
+  margin-bottom: 2rem;
+    .col-1-of-3{
+        grid-template-columns: 25% 25% 25% auto;
+        @media only screen and (max-width: 600px) {
+            grid-template-columns: 100%;
+        
+          }
+    }
+    .btn-remove{
+        padding-top: 2rem;
+        button {
+          padding: 1rem 2rem;
+        }
+    }
+
+    .primary-add {
+      margin-top: 1rem;
+    }
+  }
+  
+
+    ::ng-deep  .ui-inputtext{
+        border: none !important;
+        background: rgba(120, 144, 156, 0.151) !important;
+        border-radius: 5rem !important;
+        padding: .7rem 2rem !important;
+        margin: 1rem 0 !important;
+        width: 100% !important;
+        color: #78909C !important;
+        font-weight: 600 !important;
+    }
+  .btn-add{
+      img{
+          width: 20%;
+  @media only screen and (max-width: 600px) {
+    width: 35%;
+
+
+  }
+      }
+  }
+  .btn-remove{
+  @media only screen and (max-width: 600px) {
+width: 60%;
+  }
+
+  }
