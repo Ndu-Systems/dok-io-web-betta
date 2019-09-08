@@ -1,13 +1,13 @@
-import { CloseModalEventEmmiter } from "./../../../models/modal.eventemitter.model";
-import { Component, OnInit, Output, EventEmitter } from "@angular/core";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms"; //l-f
-import { PatientService, LoginService } from "src/app/services";
-import { LAST_INSERT_ID, getCurrentUser } from "src/app/shared";
+import { CloseModalEventEmmiter } from './../../../models/modal.eventemitter.model';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms'; //l-f
+import { PatientService, LoginService } from 'src/app/services';
+import { LAST_INSERT_ID, getCurrentUser } from 'src/app/shared';
 
 @Component({
-  selector: "app-add-patient",
-  templateUrl: "./add-patient.component.html",
-  styleUrls: ["./add-patient.component.scss"]
+  selector: 'app-add-patient',
+  templateUrl: './add-patient.component.html',
+  styleUrls: ['./add-patient.component.scss']
 })
 export class AddPatientComponent implements OnInit {
   @Output() closeModalAction: EventEmitter<
@@ -15,15 +15,15 @@ export class AddPatientComponent implements OnInit {
   > = new EventEmitter();
   user;
   provinces: Array<string> = [
-    "Eastern Cape",
-    "Free State",
-    "Gauteng",
-    "KwaZulu-Natal",
-    "Limpopo",
-    "Mpumalanga",
-    "North West",
-    "Northern Cape",
-    "Western Cape"
+    'Eastern Cape',
+    'Free State',
+    'Gauteng',
+    'KwaZulu-Natal',
+    'Limpopo',
+    'Mpumalanga',
+    'North West',
+    'Northern Cape',
+    'Western Cape'
   ];
 
   /*
@@ -48,7 +48,7 @@ Form begin here
   StatusId: number;
   Province: number;
   //validation
-  message: string = "";
+  message: string = '';
 
   /*
 Form ends here
@@ -77,7 +77,6 @@ Form ends here
     });
 
     this.rForm.valueChanges.subscribe(data => {
-      console.log(data);
       if (data.DOB) this.calculateAge(data.DOB);
     });
   }

@@ -26,11 +26,13 @@ import {
   PatientComponent,
   AddPatientComponent,
   AddNoteComponent,
-  UpdatePatientComponent
+  UpdatePatientComponent,
+  PatientPersonalInformationComponent
 } from './Patient';
 import { DashboardNavComponent } from './dashboard-nav';
 import { CardComponent } from './card';
-import { InitialsPipe } from '../shared/pipes/initials.pipe';
+import { InitialsPipe } from '../shared';
+
 
 const routes: Routes = [
   {
@@ -42,6 +44,7 @@ const routes: Routes = [
       { path: 'staff', component: StaffComponent },
       { path: 'practices', component: PracticesComponent },
       { path: 'patients', component: PatientsComponent },
+      { path: 'register-patient', component: AddPatientComponent },
       { path: 'patient/:id', component: PatientComponent },
       {
         path: 'patient-prescription/:id',
@@ -80,7 +83,8 @@ export const declarations: Array<any> = [
   QuickRemindersComponent,
   DashboardNavComponent,
   CardComponent,
-  InitialsPipe
+  InitialsPipe,
+  PatientPersonalInformationComponent
 ];
 
 @NgModule({

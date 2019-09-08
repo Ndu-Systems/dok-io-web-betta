@@ -83,3 +83,120 @@
     margin-top: 0;
   }
 }
+
+
+.panel-form {
+
+  padding-bottom: 0;
+  padding-right: 0;
+    // fonts
+    h1 {
+      text-transform: capitalize;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 0 auto;
+      padding: 0 4rem;
+      color:$grey-color;
+    }
+
+    .panel-header {
+      font-size: 35px;
+      font-weight: 600;
+      margin-bottom: 101px;
+    }
+
+    .paragraph {
+      font-size: 13px;
+      color: $grey-color;
+      padding-bottom: 1rem;
+    }
+
+    .tip {
+      font-size: 15px;
+      font-weight: 400;
+      display: block;
+      padding-top: 20px;
+    }
+
+    a.cta {
+      text-transform: capitalize;
+      font-weight: 600;
+      color: $blue-color;
+      cursor: pointer;
+
+      &.home {
+        margin-top: 1rem;
+        display: block;
+        color: $ocean-blue-color;
+        font-size: 13px;
+      }
+    }
+
+    // forms
+
+    .form {
+      padding: 1rem 4rem;
+      width: 40%;
+      label {
+        font-size: 15px;
+      }
+      .form-group {
+        margin-bottom: 0.5rem;
+        &.actions {
+          &.col-1-of-2{
+            grid-template-columns: auto 50%;
+          }
+          a.cta {
+            &.cancel {
+              text-transform: capitalize;
+              color: $grey-dark-color;
+              font-weight: 500;
+              margin-top: 1rem;
+            }
+          }
+
+          input[type="submit"] {
+            cursor: "pointer";
+            box-shadow: 0;
+          }
+
+          .button {
+            padding: 1rem;
+            background: #29b6f6;
+            text-transform: capitalize;
+            color: #fff;
+            border: none;
+            border-radius: 15px;
+            font-weight: 500;
+            border: none;
+            font-size: 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 100%;
+            cursor: pointer;
+
+            &:hover {
+              background: rgb(28, 155, 214);
+              cursor: "pointer";
+            }
+
+            &:disabled {
+              background: #d8d8d8;
+              cursor: no-drop;
+
+              &:hover {
+                background: #d8d8d8;
+              }
+            }
+          }
+        }
+
+
+    }
+
+    // direct
+    .panel-direct {
+      padding: 5rem 0;
+    }
+  }
+}
