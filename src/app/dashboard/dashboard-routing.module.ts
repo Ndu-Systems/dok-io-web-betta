@@ -31,7 +31,7 @@ import {
 } from './Patient';
 import { DashboardNavComponent } from './dashboard-nav';
 import { CardComponent } from './card';
-import { InitialsPipe } from '../shared';
+import { InitialsPipe, AgePipe } from '../shared';
 
 
 const routes: Routes = [
@@ -83,8 +83,12 @@ export const declarations: Array<any> = [
   QuickRemindersComponent,
   DashboardNavComponent,
   CardComponent,
-  InitialsPipe,
   PatientPersonalInformationComponent
+];
+
+export const pipes: Array<any> = [
+  InitialsPipe,
+  AgePipe
 ];
 
 @NgModule({

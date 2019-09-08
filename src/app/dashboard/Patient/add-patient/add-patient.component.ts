@@ -47,7 +47,7 @@ Form begin here
   ModifyUserId: string;
   StatusId: number;
   Province: number;
-  //validation
+  // validation
   message: string = '';
 
   /*
@@ -92,7 +92,6 @@ Form ends here
   }
   register(data) {
     this.patientService.addPatient(data).subscribe(response => {
-      debugger
       if (response.PatientId) {
         localStorage.setItem(LAST_INSERT_ID, response.PatientId);
         this.closeModalAction.emit({

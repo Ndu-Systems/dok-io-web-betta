@@ -2,13 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   DashboardRoutingModule,
-  declarations
+  declarations,
+  pipes
 } from './dashboard-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {NgxPaginationModule} from 'ngx-pagination'; 
-import {AutoCompleteModule} from 'primeng/autocomplete';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { AutoCompleteModule } from 'primeng/autocomplete';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import {ToastModule} from 'primeng/toast';
+import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
 
 
@@ -23,7 +24,7 @@ import { MessageService } from 'primeng/api';
     Ng2SearchPipeModule,
     ToastModule
   ],
-  declarations: [...declarations],
-  providers:[MessageService]
+  declarations: [...declarations, ...pipes],
+  providers: [MessageService]
 })
-export class DashboardModule {}
+export class DashboardModule { }
