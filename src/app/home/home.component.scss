@@ -32,6 +32,7 @@
       margin-top: 0%;
       font-size: 1.2rem;
       font-weight: 500;
+      cursor: pointer;
     }
   }
 
@@ -40,7 +41,27 @@
     @media only screen and (max-width: 600px){
      display: inline-block;
      cursor: pointer;
+     float: right;
+
+     .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color:#F6F9FC;
+      margin: 6px 0;
+      transition: 0.4s;
     }
+    .change .bar1 {
+      transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+     
+      transform: rotate(45deg) translate(-8px, -8px);
+    }
+    }
+    
   }
 
   .main-headings {
@@ -144,6 +165,7 @@
       grid-template-columns: 50% auto;
       padding-bottom: 2rem;
       margin-top: 1.5rem;
+      padding-right: 3rem;
       @media only screen and (max-width: 600px) {
         display: block;
         text-align: center;
@@ -163,7 +185,7 @@
       input[type=submit]{
         background-color: #017BFF;
         color: #F6F9FC;
-        padding: 12px;
+        padding: 15px;
         border: none;
         border-radius: 10px;
         cursor: pointer;

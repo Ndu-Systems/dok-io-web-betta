@@ -2,9 +2,9 @@
     <div class="tabs">
         <ul>
             <li>Home</li>
-            <li>About</li>
-            <li>How it works</li>
-            <li>Sign in</li>
+            <!-- <li>About</li>
+            <li>How it works</li> -->
+            <li routerLink="sign-in">Sign in</li>
         </ul>
     </div>
     <div class="ham-icon" onclick="myFunction(this)">
@@ -154,4 +154,9 @@
     <footer>
         <h6>Powered By <span class="cc">Ndu Systems Pty Ltd.</span></h6>
     </footer>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+        }
+        </script>
   </div>
