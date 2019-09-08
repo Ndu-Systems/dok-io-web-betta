@@ -1,0 +1,44 @@
+<div class="panel-form">
+   <h1>personal information.</h1>
+   <form [formGroup]="rForm" (ngSubmit)="Login()" action="" class="form">
+      <div class="col-1-of-1">
+        <div class="form-group">
+          <label for="FirstName">first name</label> <br />
+          <input type="text" class="input-field" formControlName="FirstName" />
+          <div class="alert" *ngIf="!rForm.controls['FirstName'].valid && rForm.controls['FirstName'].touched">
+            firstname is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Surname">surname</label> <br />
+          <input type="text" class="input-field" formControlName="Surname" />
+          <div class="alert" *ngIf="!rForm.controls['Surname'].valid && rForm.controls['Surname'].touched">
+            surname is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="DOB">DOB</label> <br />
+          <input type="date" class="input-field" formControlName="DOB" />
+          <div class="alert" *ngIf="!rForm.controls['DOB'].valid && rForm.controls['DOB'].touched">
+            DOB is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="IdNumber">id number</label> <br />
+          <input type="text" class="input-field" formControlName="IdNumber" />
+          <div class="alert" *ngIf="!rForm.controls['IdNumber'].valid && rForm.controls['IdNumber'].touched">
+              IdNumber is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Age">age</label> <br />
+          <input type="number" disabled class="input-field" value="{{Age}}"/>
+        </div>
+      </div>
+      <div class="form-group actions col-1-of-2">
+        <a routerLink="/dashboard/patients" class="cta cancel">abort</a>
+        <input type="submit" value="continue" class="button" [disabled]="!rForm.valid" />
+      </div>
+    </form>
+</div>
+
