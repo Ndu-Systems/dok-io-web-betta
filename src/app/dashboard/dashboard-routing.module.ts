@@ -29,6 +29,8 @@ import {
   UpdatePatientComponent
 } from './Patient';
 import { DashboardNavComponent } from './dashboard-nav';
+import { CardComponent } from './card';
+import { InitialsPipe } from '../shared/pipes/initials.pipe';
 
 const routes: Routes = [
   {
@@ -76,7 +78,9 @@ export const declarations: Array<any> = [
   AddPracticeComponent,
   StatisticsComponent,
   QuickRemindersComponent,
-  DashboardNavComponent
+  DashboardNavComponent,
+  CardComponent,
+  InitialsPipe
 ];
 
 @NgModule({

@@ -1,0 +1,35 @@
+<div class="card-container col-1-of-4" *ngIf="model.type === 'patients' && model.items">
+  <div class="card" *ngFor="let item of model.items">
+      <div class="card-icon">
+      </div>
+      <div class="card-circle">
+          <h1 class="initials">
+            {{(item.FirstName + ' ' +item.Surname) | initials}}
+          </h1>
+      </div>
+      <div class="card-heading">
+        {{item.FirstName}} {{item.Surname}}
+      </div>
+      <div class="card-details">
+          <h1 class="text">
+             {{item.Cellphone}}
+          </h1>
+          <h1 class="text email">
+              {{item.Email}}
+          </h1>
+          <h1 class="text simple" *ngIf="item.MedicalaidName else noMedicalAid;">
+            {{item.MedicalaidName}}
+          </h1>
+          <ng-template  #noMedicalAid>
+            <h1 class="text simple no-medical">
+              no medical
+            </h1>
+          </ng-template>
+      </div>
+      <div class="card-footer">
+        <h1 class="text">
+            {{item.CreateDate | date:'mediumDate'}}
+        </h1>
+      </div>
+  </div>
+</div>

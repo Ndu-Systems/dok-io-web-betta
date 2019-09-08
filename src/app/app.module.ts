@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule ,HttpClient} from '@angular/common/http';
 import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
+import { InitialsPipe } from './shared/pipes/initials.pipe';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,7 @@ import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule, 
+    AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule
   ],
