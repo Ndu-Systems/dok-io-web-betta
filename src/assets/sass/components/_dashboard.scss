@@ -14,7 +14,7 @@
     top: 3rem;
     left: 15rem;
     width: 85vw;
-    height: 90vh;
+    height: 94vh;
     border-radius: 15px;
     padding: 15px;
 
@@ -41,5 +41,23 @@
     width: 15%;
     height: 100%;
     background: $nav-bg-blue;
+    border-radius: 15px 0px 0px 15px;
+    li {
+      margin: 1rem 0;
+
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .quick-stats{
+    padding: 15px;
+    width: 90rem;
+    margin: 0 auto;
+    &.col-1-of-2 {
+      grid-template-columns: 50% 50%;
+      grid-gap:1rem;
+    }
   }
 }

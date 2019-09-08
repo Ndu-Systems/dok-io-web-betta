@@ -18,7 +18,7 @@
             </option>
           </select>
         </div>
-      </div>  
+      </div>
       <div class="table-container">
           <div class="wrap">
             <div class="table-wrapper">
@@ -28,7 +28,7 @@
                     <th>full name</th>
                     <th>medical aid</th>
                     <th>email</th>
-                    <th>cellphone</th>                  
+                    <th>cellphone</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -45,7 +45,7 @@
                         No Medical Aid
                       </span></td>
                     <td data-title="email"> {{data.Email}}</td>
-                    <td data-title="cellphone"> {{data.Cellphone}}</td>                     
+                    <td data-title="cellphone"> {{data.Cellphone}}</td>
                   </tr>
                 </tbody>
               </table>
@@ -56,9 +56,9 @@
           </div>
         </div>
     </section>
-  
+
   </section>
-  
+
   <div class="overlay" *ngIf="showUpdatePopup">
     <app-update-patient [patient]="patient" *ngIf="openUpdatePatient" (closeModalAction)="closeModal($event)"></app-update-patient>
     <app-update-medical-aid *ngIf="openUpdateMedicalAid" (closeModalAction)="closeModal($event)"></app-update-medical-aid>
@@ -67,6 +67,5 @@
   <div class="overlay" *ngIf="showConfirm">
    <app-confirm-box [actionString]="actionString"  (closeModalAction)="closeModal($event)"></app-confirm-box>
   </div>
-  
-  
-  
+
+

@@ -1,17 +1,17 @@
 import { User } from 'src/app/models';
- import { Patient } from "./../../../models/patient.model";
-import { Component, OnInit } from "@angular/core";
-import { PatientService, QueeService, LoginService } from "src/app/services";
-import { Observable } from "rxjs";
-import { BreadCrumb } from "../../bread-crumb/bread-crumb.model";
-import { getCurrentUser, USER_ROLES_STAFF } from "src/app/shared";
-import { CloseModalEventEmmiter } from "src/app/models/modal.eventemitter.model";
-import { MessageService } from "primeng/api";
+import { Patient } from '../../models/patient.model';
+import { Component, OnInit } from '@angular/core';
+import { PatientService, QueeService, LoginService } from 'src/app/services';
+import { Observable } from 'rxjs';
+import { BreadCrumb } from '../bread-crumb/bread-crumb.model';
+import { getCurrentUser, USER_ROLES_STAFF } from 'src/app/shared';
+import { CloseModalEventEmmiter } from 'src/app/models/modal.eventemitter.model';
+import { MessageService } from 'primeng/api';
 
 @Component({
-  selector: "app-patients",
-  templateUrl: "./patients.component.html",
-  styleUrls: ["./patients.component.scss"]
+  selector: 'app-patients',
+  templateUrl: './patients.component.html',
+  styleUrls: ['./patients.component.scss']
 })
 export class PatientsComponent implements OnInit {
   UserId: string = getCurrentUser();
@@ -22,13 +22,13 @@ export class PatientsComponent implements OnInit {
   openUpdateEmengencyContact: boolean;
   patients: any[];
   patient: any;
-  actionString: string = "John doe Is about to be archived";
-  user:User;
+  actionString: string = 'John doe Is about to be archived';
+  user: User;
   p: number = 1;
   items: Array<BreadCrumb> = [
     {
-      name: "ACTIVE PATIENTS",
-      url: "/dashboard",
+      name: 'ACTIVE PATIENTS',
+      url: '/dashboard',
       active: true
     },
     // {
@@ -37,8 +37,8 @@ export class PatientsComponent implements OnInit {
     //   active: false
     // },
     {
-      name: " ARCHIVED PATIENTS",
-      url: "/dashboard/archived",
+      name: ' ARCHIVED PATIENTS',
+      url: '/dashboard/archived',
       active: false
     }
   ];
@@ -50,12 +50,12 @@ export class PatientsComponent implements OnInit {
     private queeService: QueeService,
     private messageService: MessageService,
     private authicateService: LoginService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.authicateService.currentUser.subscribe(u => (this.user = u));
     let parentuserid = this.user.UserId;
-    if(this.user.Role == USER_ROLES_STAFF) {
+    if (this.user.Role == USER_ROLES_STAFF) {
       parentuserid = this.user.ParentId;
     }
     //Check if the user is staff
@@ -73,9 +73,9 @@ export class PatientsComponent implements OnInit {
     };
     this.queeService.addQuee(data).subscribe(r => {
       if (!isNaN(r)) {
-        this.popMessage("success", "Added to quee", `Your ticket number: ${r}`);
+        this.popMessage('success', 'Added to quee', `Your ticket number: ${r}`);
       } else {
-        this.popMessage("warn", "Sorry...", `${r}`);
+        this.popMessage('warn', 'Sorry...', `${r}`);
       }
     });
   }
@@ -122,7 +122,7 @@ export class PatientsComponent implements OnInit {
     this.showConfirm = true;
     this.actionString = `${patient.FirstName} ${
       patient.Surname
-    } Is about to be archived`;
+      } Is about to be archived`;
     this.patient = patient;
     this.patient.showMobilePatientOptions = false;
   }
@@ -137,8 +137,8 @@ export class PatientsComponent implements OnInit {
 
       // alert(`${this.patient.FirstName } archived!`)
       this.popMessage(
-        "warn",
-        "Transiction saved",
+        'warn',
+        'Transiction saved',
         `${this.patient.FirstName} archived!`
       );
     });
@@ -158,6 +158,6 @@ export class PatientsComponent implements OnInit {
   }
 
   viewPatient() {
-    alert("news read");
+    alert('news read');
   }
 }

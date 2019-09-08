@@ -19,6 +19,7 @@ export class ArchivedPatientsComponent implements OnInit {
   openUpdateMedicalAid: boolean;
   openUpdateEmengencyContact: boolean;
   patient: Patient;
+  closeModal;
   actionString:string='John doe Is about to be archived';
 
   p: number = 1;
