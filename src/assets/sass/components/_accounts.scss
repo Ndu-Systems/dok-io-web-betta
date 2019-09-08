@@ -78,12 +78,17 @@
             .button {
               padding: 1rem;
               background: #29b6f6;
-              text-transform: uppercase;
+              text-transform: capitalize;
               color: #fff;
-              font-weight: 600;
               border: none;
-              font-size: 1.1rem;
               border-radius: 15px;
+              font-weight: 500;
+              border: none;
+              font-size: 1rem;
+              border-radius: 15px;
+              cursor: pointer;
+              width: 100%;
+              cursor: pointer;
 
               &:hover {
                 background: rgb(28, 155, 214);
@@ -236,16 +241,17 @@
             }
           }
         }
-        .panel-direct{
+
+        .panel-direct {
           text-align: center;
-         }
+        }
       }
     }
   }
 }
 
 // mobile Ipad
-@media only screen and ( width: 768px) {
+@media only screen and (width: 768px) {
   .accounts {
     background-repeat: no-repeat;
 
@@ -286,8 +292,9 @@
             }
           }
         }
-        .panel-direct{
-         text-align: center;
+
+        .panel-direct {
+          text-align: center;
         }
       }
     }

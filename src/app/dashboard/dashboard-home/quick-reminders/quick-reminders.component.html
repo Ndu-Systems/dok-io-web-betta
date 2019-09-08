@@ -1,0 +1,55 @@
+<div class="table-container" *ngIf="model.image == appointment else queues;">
+  <h1 class="table-header">
+    {{model.title}}
+  </h1>
+  <table class="table">
+    <tr>
+      <th class="empty"></th>
+      <th>patient name</th>
+      <th>appointment type</th>
+      <th>appointment date</th>
+      <!-- <th class="empty"></th> -->
+    </tr>
+    <tr *ngFor="let item of model.items">
+      <td><img src="assets/images/dashboard/{{model.image}}-icon.svg.svg" class="icon" alt="appointment icon">
+      </td>
+      <td>{{item.FullName}}</td>
+      <td>{{item.Type}}</td>
+      <td class="date">{{item.Date}}</td>
+    </tr>
+  </table>
+  <div class="table-footer">
+    <a routerLink="patients" class="cta">
+      view all
+    </a>
+  </div>
+</div>
+<ng-template #queues>
+    <div class="table-container">
+        <h1 class="table-header">
+          {{model.title}}
+        </h1>
+        <table class="table">
+          <tr>
+            <th class="empty"></th>
+            <th>patient name</th>
+            <th>appointment type</th>
+            <th>appointment date</th>
+            <!-- <th class="empty"></th> -->
+          </tr>
+          <tr *ngFor="let item of model.items">
+            <td><img src="assets/images/dashboard/{{model.image}}-icon.svg" class="icon" alt="queue icon">
+            </td>
+            <td>{{item.FullName}}</td>
+            <td *ngIf="item.HasMedicalAid">Yes</td>
+            <td *ngIf="!item.HasMedicalAid">No</td>
+            <td class="date">{{item.RegisteredDate}}</td>
+          </tr>
+        </table>
+        <div class="table-footer">
+          <a routerLink="patients" class="cta">
+            view all
+          </a>
+        </div>
+      </div>
+</ng-template>

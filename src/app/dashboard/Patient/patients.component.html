@@ -1,4 +1,4 @@
-<section class="main">
+<!-- <section class="main">
   <app-bread-crumb [items]="items"></app-bread-crumb>
 
   <section class="section-main">
@@ -82,17 +82,22 @@
     </div>
   </section>
 
-</section>
+</section> -->
 
 
-<div class="overlay" *ngIf="showUpdatePopup">
-  <app-update-patient [patient]="patient" *ngIf="openUpdatePatient" (closeModalAction)="closeModal($event)">
-  </app-update-patient>
-  <app-update-medical-aid *ngIf="openUpdateMedicalAid" (closeModalAction)="closeModal($event)"></app-update-medical-aid>
-  <app-update-emergency-contact *ngIf="openUpdateEmengencyContact" (closeModalAction)="closeModal($event)">
-  </app-update-emergency-contact>
+<div class="panel col-1-of-3">
+  <div class="col-1-of-2">
+    <img src="assets/images/dashboard/patient-icon.svg" alt="patient icon">
+    <h1 class="panel-header">
+      active patients
+    </h1>
+  </div>
+  <div class="panel-search">
+    <input id="search" type="text" placeholder="Search..." name="search" class="search">
+    <button class="btn-search">
+      <img src="assets/images/dashboard/search.svg" alt="search icon">
+    </button>
+  </div>
+  <a routerLink="patients" class="button">register a patient</a>
 </div>
-<div class="overlay" *ngIf="showConfirm">
-  <app-confirm-box [actionString]="actionString" (closeModalAction)="closeModal($event)"></app-confirm-box>
-</div>
-<p-toast></p-toast>
+<app-card [model]="model"></app-card>

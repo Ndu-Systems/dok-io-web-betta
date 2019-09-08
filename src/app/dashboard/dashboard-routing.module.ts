@@ -1,9 +1,6 @@
 import { AddPracticeComponent } from './Dok-practices/add-practice/add-practice.component';
 import { AddStaffComponent } from './Dok-staff/add-staff/add-staff.component';
-import { ArchivedPatientsComponent } from './Patient/archived-patients/archived-patients.component';
 import { ConfirmBoxComponent } from './Patient/confirm-box/confirm-box.component';
-import { UpdatePatientComponent } from './Patient/update-patient/update-patient.component';
-import { AddNoteComponent } from './Patient/add-note/add-note.component';
 import { AddPrescriptionComponent } from './prescription/add-prescription/add-prescription.component';
 import { AddEmergencyContactComponent } from './Contact-Person/add-emergency-contact/add-emergency-contact.component';
 import { AddMedicalAidComponent } from './Medical-aid/add-medical-aid/add-medical-aid.component';
@@ -13,9 +10,6 @@ import { DashboardHomeComponent } from './dashboard-home/dashboard-home.componen
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard.component';
-import { PatientsComponent } from './Patient/patients/patients.component';
-import { PatientComponent } from './Patient/patient-details/patient.component';
-import { AddPatientComponent } from './Patient/add-patient/add-patient.component';
 import { PrintPrescriptionComponent } from './prescription/print-prescription';
 import { ViewPrescriptionComponent } from './prescription/view-prescription';
 import { AccountOptionsComponent } from './account-options';
@@ -24,6 +18,19 @@ import { UpdateMedicalAidComponent } from './Medical-aid/update-medical-aid/upda
 import { UpdateEmergencyContactComponent } from './Contact-Person/update-emergency-contact/update-emergency-contact.component';
 import { StaffComponent } from './Dok-staff/staff/staff.component';
 import { PracticesComponent } from './Dok-practices/practices/practices.component';
+import { StatisticsComponent } from './statistics';
+import { QuickRemindersComponent } from './dashboard-home';
+import {
+  PatientsComponent,
+  ArchivedPatientsComponent,
+  PatientComponent,
+  AddPatientComponent,
+  AddNoteComponent,
+  UpdatePatientComponent
+} from './Patient';
+import { DashboardNavComponent } from './dashboard-nav';
+import { CardComponent } from './card';
+import { InitialsPipe } from '../shared/pipes/initials.pipe';
 
 const routes: Routes = [
   {
@@ -68,11 +75,16 @@ export const declarations: Array<any> = [
   StaffComponent,
   AddStaffComponent,
   PracticesComponent,
-  AddPracticeComponent
+  AddPracticeComponent,
+  StatisticsComponent,
+  QuickRemindersComponent,
+  DashboardNavComponent,
+  CardComponent,
+  InitialsPipe
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class DashboardRoutingModule {}
+export class DashboardRoutingModule { }

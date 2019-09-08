@@ -1,14 +1,14 @@
-import { API_URL } from "src/app/shared";
-import { HttpClient } from "@angular/common/http";
-import { Injectable } from "@angular/core";
-import { Observable, BehaviorSubject } from "rxjs";
-import { NotesComponent } from "../dashboard/Patient/notes/notes.component";
+import { API_URL } from 'src/app/shared';
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { NotesComponent } from '../dashboard/Patient/notes/notes.component';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class PatientService {
- 
+
   notes = new BehaviorSubject<string>('');
   castNotes = this.notes.asObservable();
 

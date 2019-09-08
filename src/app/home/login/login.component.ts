@@ -37,11 +37,11 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
     this.rForm = this.fb.group({
-      email: new FormControl('', Validators.compose([
+      email: new FormControl(this.email, Validators.compose([
         Validators.required,
         Validators.pattern('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$')
       ])),
-      password: [null, Validators.required]
+      password: [this.password, Validators.required]
     });
 
     // get return url from route parameters or default to dashboard

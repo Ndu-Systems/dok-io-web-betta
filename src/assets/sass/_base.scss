@@ -3,6 +3,11 @@
 @import "variables";
 @import "./components/accounts";
 @import "./components/dashboard";
+@import "./components/stats";
+@import "./components/table-container";
+@import "./components/panel";
+@import "./components/card-list";
+
 
 * {
   margin: 0;

@@ -2,16 +2,62 @@
   background: $cloud-white-color;
   border-radius: 15px;
   height: 99vh;
-  background: green;
+
+  // background: green;
   .col-1-of-2 {
     grid-template-columns: 20% auto;
   }
+
   .container {
-    background: blue;
+    background: $white-color;
     position: absolute;
     top: 3rem;
     left: 15rem;
     width: 85vw;
-    height: 90vh;
+    height: 94vh;
+    border-radius: 15px;
+    padding: 15px;
+
+  }
+
+  ul {
+    padding-top: 10rem;
+    padding-left: 14%;
+    list-style: none;
+    width: 60%;
+
+    li {
+      a {
+        margin-top: 1rem;
+        color: $cloud-white-color;
+        font-size: 25px;
+        font-weight: 300;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .nav-bar {
+    width: 15%;
+    height: 100%;
+    background: $nav-bg-blue;
+    border-radius: 15px 0px 0px 15px;
+    li {
+      margin: 1rem 0;
+
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .quick-stats{
+    padding: 15px;
+    width: 90rem;
+    margin: 0 auto;
+    &.col-1-of-2 {
+      grid-template-columns: 50% 50%;
+      grid-gap:1rem;
+    }
   }
 }

@@ -12,6 +12,8 @@ export class NotesComponent implements OnInit {
   showAddNotes: boolean;
   notes$:Observable<Array<any>>;
   PatientId: string;
+  p;
+  searchText;
   constructor(private patientService:PatientService) {}
 
   ngOnInit() {
