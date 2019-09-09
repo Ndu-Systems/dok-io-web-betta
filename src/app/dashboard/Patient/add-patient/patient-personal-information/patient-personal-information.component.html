@@ -1,6 +1,6 @@
 <div class="panel-form">
    <h1>personal information.</h1>
-   <form [formGroup]="rForm" (ngSubmit)="Login()" action="" class="form">
+   <form [formGroup]="rForm" (ngSubmit)="addPatient(rForm.value)" action="" class="form">
       <div class="col-1-of-1">
         <div class="form-group">
           <label for="FirstName">first name</label> <br />
@@ -18,22 +18,22 @@
         </div>
         <div class="form-group">
           <label for="DOB">DOB</label> <br />
-          <input type="date" class="input-field" formControlName="DOB" />
+          <input type="date" class="input-field" formControlName="DOB"/>
           <div class="alert" *ngIf="!rForm.controls['DOB'].valid && rForm.controls['DOB'].touched">
             DOB is required
           </div>
         </div>
         <div class="form-group">
           <label for="IdNumber">id number</label> <br />
-          <input type="text" class="input-field" formControlName="IdNumber" />
+          <input type="number" class="input-field" formControlName="IdNumber" />
           <div class="alert" *ngIf="!rForm.controls['IdNumber'].valid && rForm.controls['IdNumber'].touched">
               IdNumber is required
           </div>
         </div>
-        <div class="form-group">
+        <!-- <div class="form-group">
           <label for="Age">age</label> <br />
           <input type="number" disabled class="input-field" value="{{Age}}"/>
-        </div>
+        </div> -->
       </div>
       <div class="form-group actions col-1-of-2">
         <a routerLink="/dashboard/patients" class="cta cancel">abort</a>
