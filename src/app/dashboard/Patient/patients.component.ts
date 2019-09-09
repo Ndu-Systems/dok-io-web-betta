@@ -1,11 +1,8 @@
 import { User, CardModel } from 'src/app/models';
-import { Patient } from '../../models/patient.model';
 import { Component, OnInit } from '@angular/core';
 import { PatientService, QueeService, LoginService } from 'src/app/services';
-import { Observable } from 'rxjs';
 import { BreadCrumb } from '../bread-crumb/bread-crumb.model';
 import { getCurrentUser, USER_ROLES_STAFF } from 'src/app/shared';
-import { CloseModalEventEmmiter } from 'src/app/models/modal.eventemitter.model';
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -59,10 +56,8 @@ export class PatientsComponent implements OnInit {
     this.authicateService.currentUser.subscribe(u => (this.user = u));
     this.patientService.getPatients(parentuserid).subscribe(r => {
       this.patients = r.patients;
-      console.log(this.patients);
       this.model.items = this.patients;
-      console.log(this.model.items);
-     });
+    });
     this.model = new CardModel();
     this.model.type = 'patients';
 
