@@ -1,4 +1,4 @@
- import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import {
   CloseModalEventEmmiter,
   ExitModalEventEmmiter
@@ -38,12 +38,12 @@ export class DashboardComponent implements OnInit {
   }
 
   ngOnInit() {
-    //get userid
+    // get userid
     this.authicateService.currentUser.subscribe(u => (this.user = u));
-    //get user details
+    // get user details
     this.authicateService.getFullUserDetails(this.user.UserId).subscribe(r => {
       this.currentUser = r;
-      //User not verified
+      // User not verified
       if (Number(this.currentUser.StatusId) == STATUS_USER_NEW) {
         this.isNewUser = true;
       }
@@ -55,7 +55,7 @@ export class DashboardComponent implements OnInit {
   }
   closeModal(e: CloseModalEventEmmiter) {
     this.cloaseAll();
-    console.log(e);
+
 
     if (e.closeAll) {
       this.showPopup = false;
@@ -91,7 +91,7 @@ export class DashboardComponent implements OnInit {
         let ids = queeList.map(x => Number(x.QuiID));
         let nextId = Math.min(...ids);
 
-        //beep
+        // beep
         // let beep = document.getElementById("myAudio");
         // beep.play();
 
@@ -99,7 +99,7 @@ export class DashboardComponent implements OnInit {
         audio.src = "../../assets/sounds/beep.wav";
         audio.load();
         audio.play();
-        setTimeout(function() {
+        setTimeout(function () {
           // say it
           var base = `Now calling patient number, ${nextId}`;
           var msg = new SpeechSynthesisUtterance(base);
