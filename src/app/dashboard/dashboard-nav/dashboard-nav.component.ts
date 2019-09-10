@@ -31,11 +31,13 @@ export class DashboardNavComponent implements OnInit {
     this.models = [] = [
       {
         Name: 'dashboard',
-        Link: '/dashboard'
+        Link: '/dashboard',
+        Icon: 'dashboard'
       },
       {
         Name: 'patients',
-        Link: 'patients'
+        Link: 'patients',
+        Icon: 'patients'
       }
     ];
   }

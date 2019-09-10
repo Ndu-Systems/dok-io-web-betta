@@ -4,3 +4,21 @@
     grid-gap: 0;
   }
 }
+
+// responsive design
+
+// mobile IphoneX
+@media only screen and (max-width: 600px) {
+  .stats {
+    padding: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {}
+
+// mobile Ipad pro
+@media only screen and (width: 1024px) {}
+
+// mobile Ipad
+@media only screen and (width: 768px) {}

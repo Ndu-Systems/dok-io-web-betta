@@ -1,10 +1,11 @@
-import { environment } from './../../environments/environment.prod';
+
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable, BehaviorSubject } from "rxjs";
  import { map } from "rxjs/operators";
 import { User } from "src/app/models";
 import { CURRENT_USER } from '../shared';
+import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: "root"
 })

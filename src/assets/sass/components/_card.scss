@@ -8,30 +8,54 @@
   border: 1px solid lighten($color: $grey-light-color, $amount: 0.5);
   margin: 0 auto;
   cursor: pointer;
-    img {
-      display: block;
-      height: 50px;
-      margin: 1rem 0px;
-    }
+
+  img {
+    display: block;
+    height: 50px;
+    margin: 1rem 0px;
+  }
 
   text-align: center;
 
   .card-heading {
     font-size: 12px;
-    font-weight:500;
+    font-weight: 500;
     color: $grey-color;
 
   }
-  .card-h1{
+
+  .card-h1 {
     font-size: 45px;
     font-weight: 700;
     padding: 1rem;
 
   }
+
   .card-span {
     font-size: 12px;
-    font-weight:400;
+    font-weight: 400;
     padding: 1rem;
 
   }
 }
+
+
+// responsive design
+
+// mobile IphoneX
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 343px;
+    height: 271px;
+    margin: 10px auto;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {}
+
+// mobile Ipad pro
+@media only screen and (width: 1024px) {}
+
+// mobile Ipad
+@media only screen and (width: 768px) {}

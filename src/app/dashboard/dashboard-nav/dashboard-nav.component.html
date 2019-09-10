@@ -3,6 +3,11 @@
     <li *ngFor="let item of models"><a [routerLink]="item.Link">{{item.Name}}</a></li>
   </ul>
 </div>
+<div class="nav-bar-mobile">
+  <ul>
+    <li *ngFor="let item of models"><a [routerLink]="item.Link"><img src="../../../assets/images/dashboard/mobile-{{item.Icon}}.svg" alt=""></a></li>
+  </ul>
+</div>
 <div class="user col-1-of-2">
   <h1 class="title" *ngIf="user">
     Hi, {{user.Title}}{{user.Surname}}
