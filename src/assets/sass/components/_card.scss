@@ -42,6 +42,7 @@
 
 // responsive design
 
+
 // mobile IphoneX
 @media only screen and (max-width: 600px) {
   .card {
@@ -50,6 +51,12 @@
     margin: 10px auto;
   }
 
+}
+// Iphone 5/SE
+@media only screen and (max-width: 320px) {
+  .card {
+    width: 300px;
+  }
 }
 
 @media only screen and (max-width: 414px) {}

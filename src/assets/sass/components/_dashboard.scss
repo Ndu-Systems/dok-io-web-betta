@@ -98,6 +98,7 @@
 @media only screen and (max-width: 600px) {
   .dashboard {
     height: 100%;
+    border-radius: 0;
 
     .nav-bar {
       display: none;
@@ -105,16 +106,31 @@
 
     .nav-bar-mobile {
       display: block;
+      position: fixed;
+      left: 2rem;
+      bottom: 5rem;
+      z-index: 9999;
+
 
       ul {
         padding-top: 0;
         padding-left: 0;
         list-style: none;
-        width: 60%;
+        width: 90vw;
+        height: 7vh;
+        padding: 1rem 0;
+        background: $white-color;
+        margin: 0 auto;
+
+        -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.21);
+        -moz-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.21);
+        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.21);
+        border-radius: 15px;
 
         li {
           float: left;
-          margin: 1rem 2rem;
+          margin: 0 2rem;
+
           a {
             margin-top: 0;
             color: $cloud-white-color;
@@ -137,7 +153,7 @@
     }
 
     .quick-stats {
-      padding: 5px;
+      padding: 0px;
       width: 100%;
       margin: 0 auto;
 
@@ -152,10 +168,33 @@
       padding: 0 15px;
       top: 0;
       left: 0;
+      padding: 5rem;
+      padding-right: 2rem;
 
       &.col-1-of-2 {
         text-align: right;
         grid-template-columns: 100%;
+        grid-gap: 1rem;
+      }
+
+      .title,
+      .sign-out {
+        color: $white-color;
+      }
+
+      .sign-out {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// Iphone 5/SE
+@media only screen and (max-width: 320px) {
+  .dashboard {
+    .nav-bar-mobile {
+      ul {
+        height: 10vh;
       }
     }
   }
