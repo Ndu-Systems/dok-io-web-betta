@@ -19,6 +19,8 @@ export class HomeComponent implements OnInit {
   cellphone = '';
   name = '';
 
+  showMobileNavigation = false;
+
   constructor(
     private fb: FormBuilder
   ) {
@@ -48,5 +50,9 @@ export class HomeComponent implements OnInit {
     if (event.close) {
       this.showModal = false;
     }
+  }
+
+  toggleNav(){
+    this.showMobileNavigation = !this.showMobileNavigation;
   }
 }
