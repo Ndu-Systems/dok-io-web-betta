@@ -1,16 +1,16 @@
-
-/* section1 */
 .section1 {
     text-align: center;
     padding-top: 10rem;
-    background:linear-gradient(55deg, #28A7F0 0%, #28A7F0 51%, rgba(55, 11, 199, 0.726) 85%);
+    margin-bottom: 10rem;
+    background: linear-gradient(55deg, #28A7F0 0%, #28A7F0 51%, rgba(55, 11, 199, 0.726) 85%);
 
     h1 {
         color: #29B6F6;
         margin: auto;
         font-size: 2rem;
-        margin-top: 10rem;
+        margin-top: 10rem
     }
+
     p {
         width: 80%;
         margin: auto;
@@ -82,7 +82,8 @@
         grid-template-columns: 33% 33% 33%;
         margin: auto;
         padding: 2rem;
-        p{
+
+        p {
             text-align: center;
             margin: auto;
             width: 70%;
@@ -91,6 +92,7 @@
             padding-top: 1rem;
             font-size: 1.2rem;
         }
+
         h2 {
             border-radius: 100% 100%;
             background: #C65587;
@@ -105,16 +107,17 @@
     }
 }
 
-
 /* section-3 */
 .section-3 {
     margin-top: 5rem;
+
     h1 {
         color: #29B6F6;
         text-align: center;
         font-size: 2rem;
         margin-bottom: 1rem;
     }
+
     p {
         width: 80%;
         margin: auto;
@@ -122,6 +125,7 @@
         margin-top: 2rem;
         font-size: 1.2rem;
     }
+
     .content-section-3-1 {
         display: grid;
         grid-template-columns: 50% auto;
@@ -129,28 +133,29 @@
         margin: auto;
         margin-bottom: 4rem;
         margin-top: 5rem;
-      
-        
-        .paragraph{
+
+
+        .paragraph {
             padding: 0%;
             margin: auto;
-            p{
+
+            p {
                 font-size: 1.5rem;
-                margin: 0%;  
-             text-align: left;
+                margin: 0%;
+                text-align: left;
                 width: 100%;
-             
+
             }
         }
-    
+
         img {
             width: 60%;
             margin-left: 5rem;
         }
-       
+
     }
-  
-  
+
+
 }
 
 h3 {
@@ -164,18 +169,16 @@ h3 {
     margin-top: 10rem;
 }
 
-    button {
-        background: linear-gradient(55deg, #28A7F0 0%, #28A7F0 51%, rgba(125, 39, 176, 1) 100%);
-        border-radius: 5rem;
-        padding: .9rem;
-        font-size: 1.5rem;
-        color: #FDFEFE;
-        border: none;
-        margin-bottom: 2rem;
-        width: 15%;
-        margin: auto;
-        background: yellow;
-       
-    }
+button {
+    background: linear-gradient(55deg, #28A7F0 0%, #28A7F0 51%, rgba(125, 39, 176, 1) 100%);
+    border-radius: 5rem;
+    padding: .9rem;
+    font-size: 1.5rem;
+    color: #FDFEFE;
+    border: none;
+    margin-bottom: 2rem;
+    width: 15%;
+    margin: auto;
+    background: yellow;
 
-
+}
