@@ -1,14 +1,15 @@
+import { environment } from './../../environments/environment.prod';
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable, BehaviorSubject } from "rxjs";
-import { API_URL, CURRENT_USER } from "src/app/shared";
-import { map } from "rxjs/operators";
+ import { map } from "rxjs/operators";
 import { User } from "src/app/models";
+import { CURRENT_USER } from '../shared';
 @Injectable({
   providedIn: "root"
 })
 export class LoginService {
-  url = API_URL;
+  url = environment.API_URL;
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
 
