@@ -1,26 +1,52 @@
 <div class="main-container">
-  <div class="tabs">
-    <ul>
-      <li>
-        <a routerLink="/" routerLinkActive="active">Home</a>
+    <div class="tabs">
+        <ul class="desktop-ul">
+            <li>
+                <a routerLink="/" routerLinkActive="active">Home</a>
+            </li>
+            <li>
+                <a routerLink="/about-us" routerLinkActive="active"> About Us</a>
 
-      </li>
-      <li>
-        <a routerLink="/sign-in" routerLinkActive="active"> Sign in</a>
+            </li>
+            <li>
+                <a routerLink="/sign-in" routerLinkActive="active"> Sign in</a>
+            </li>
+        </ul>
+    </div>
 
-      </li>
-    </ul>
-  </div>
-  <div class="ham-icon">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-  </div>
-  <div class="parent-home">
-    <router-outlet></router-outlet>
-  </div>
+    <div class="ham-icon" (click)="toggleNav()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 
-  <footer>
-    <h6>Powered By <span class="cc">Ndu Systems Pty Ltd.</span></h6>
-  </footer>
-</div>
+    <div class="mobile-nav" *ngIf="showMobileNavigation">
+        <div class="ham-icon" (click)="toggleNav()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <ul>
+            <li>
+                <a routerLink="/" (click)="toggleNav()" routerLinkActive="active">Home</a>
+            </li>
+            <li>
+                <a routerLink="/about-us" (click)="toggleNav()" routerLinkActive="active"> About Us</a>
+            </li>
+            <!-- <li>How it works</li>  -->
+            <li>
+                <a routerLink="/sign-in" (click)="toggleNav()" routerLinkActive="active"> Sign in</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="parent-home">
+        <router-outlet></router-outlet>
+    </div>
+
+    <footer>
+        <h6>Powered By <span class="cc">Ndu Systems Pty Ltd.</span></h6>
+    </footer>
+    </div>
+<!--
+    <<<<<<< HEAD </div>=======>>>>>>> 5e1ff34fe64c89fe3815c177764e1833ff8f5d64 -->

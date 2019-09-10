@@ -1,4 +1,25 @@
+.main-container {
+  background-color: #fff;
+  background-image: url(/assets/images/home/backgrimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top left;
+  padding: 1rem 7rem;
+  border-radius: 15px;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.21);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.21);
 
+  @media only screen and (max-width: 600px) {
+    background-image: url(/assets/images/home/mobile-background-main.png);
+    background-size: 100%;
+    margin-top: 0%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    padding: 1rem;
+    border-radius: 0;
+  }
   .main-headings {
     margin-left: 10rem;
     width: 50%;
@@ -378,3 +399,4 @@
     display: grid;
     justify-content: center;
   }
+}
