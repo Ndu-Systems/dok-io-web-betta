@@ -1,29 +1,29 @@
-import { Injectable } from "@angular/core";
-import { Observable } from "rxjs";
-import { API_URL } from "../shared";
-import { HttpClient } from "@angular/common/http";
+import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
+ import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
-  providedIn: "root"
+  providedIn: 'root'
 })
 export class EmergencyContactService {
-
+  API_URL = environment.API_URL;
   constructor(private http: HttpClient) {}
   addEmergencyContact(data): Observable<any> {
     return this.http.post<any>(
-      `${API_URL}/api/contactperson/add-contactperson.php`,
+      `${this.API_URL}/api/contactperson/add-contactperson.php`,
       data
     );
   }
   updateEmergencyContact(data): Observable<any> {
     return this.http.post<any>(
-      `${API_URL}/api/contactperson/update-contactperson.php`,
+      `${this.API_URL}/api/contactperson/update-contactperson.php`,
       data
     );
   }
   getPatientEmegencyContatct(PatientId): Observable<any> {
     return this.http.get<any>(
-      `${API_URL}/api/contactperson/get-contactperson.php?PatientId=${PatientId}`
+      `${this.API_URL}/api/contactperson/get-contactperson.php?PatientId=${PatientId}`
     );
   }
 }

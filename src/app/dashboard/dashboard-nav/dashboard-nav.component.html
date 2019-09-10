@@ -1,5 +1,11 @@
 <div class="nav-bar">
-    <ul>
-       <li *ngFor="let item of models"><a [routerLink]="item.Link">{{item.Name}}</a></li>
-    </ul>
-  </div>
+  <ul>
+    <li *ngFor="let item of models"><a [routerLink]="item.Link">{{item.Name}}</a></li>
+  </ul>
+</div>
+<div class="user col-1-of-2">
+  <h1 class="title" *ngIf="user">
+    Hi, {{user.Title}}{{user.Surname}}
+  </h1>
+  <a routerLink="/" (click)="logout()" class="sign-out">sign out</a>
+</div>

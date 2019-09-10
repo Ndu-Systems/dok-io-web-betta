@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { NavModel } from 'src/app/models';
+import { LoginService } from 'src/app/services';
 
 @Component({
   selector: 'app-dashboard-nav',
@@ -8,10 +9,22 @@ import { NavModel } from 'src/app/models';
 })
 export class DashboardNavComponent implements OnInit {
   models: NavModel[];
-  constructor() { }
+  user: any;
+  currentUser: any;
+  constructor(
+    private authicateService: LoginService
+  ) { }
 
   ngOnInit() {
     this.populateSideNav();
+    // get userid
+    this.authicateService.currentUser.subscribe(u => (this.currentUser = u));
+    // get user details
+    this.authicateService.getFullUserDetails(this.currentUser.UserId).subscribe(r => {
+      this.user = r;
+      // User not verified
+    });
+
   }
 
   populateSideNav() {
@@ -25,6 +38,11 @@ export class DashboardNavComponent implements OnInit {
         Link: 'patients'
       }
     ];
+  }
+
+
+  logout() {
+    this.authicateService.logout();
   }
 
 }

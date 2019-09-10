@@ -42,6 +42,7 @@
     height: 100%;
     background: $nav-bg-blue;
     border-radius: 15px 0px 0px 15px;
+
     li {
       margin: 1rem 0;
 
@@ -51,13 +52,35 @@
     }
   }
 
-  .quick-stats{
+  .user {
+    width: 15vw;
+    position: absolute;
+    top: 20px;
+    right: 130px;
+
+    &.col-1-of-2 {
+      grid-gap: 0;
+      grid-template-columns: 60% auto;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: 500;
+      color: gray;
+    }
+    .sign-out {
+      text-align: right;
+      color: $grey-color;
+    }
+  }
+
+  .quick-stats {
     padding: 15px;
     width: 90rem;
     margin: 0 auto;
+
     &.col-1-of-2 {
       grid-template-columns: 50% 50%;
-      grid-gap:1rem;
+      grid-gap: 1rem;
     }
   }
 }

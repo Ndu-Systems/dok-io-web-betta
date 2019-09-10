@@ -1,4 +1,5 @@
-import { WEB_HOST, VERIFICATIONLINK } from './../../shared/config';
+import { environment } from 'src/environments/environment';
+import {  VERIFICATIONLINK } from './../../shared/config';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, FormControl } from '@angular/forms';
 import { ExitModalEventEmmiter } from 'src/app/models';
@@ -65,7 +66,7 @@ export class SignUpComponent implements OnInit {
     }
     this.signUpService.signUp(data).subscribe(response => {
       if (response.UserId) {
-        const link = `${WEB_HOST}/#/${VERIFICATIONLINK}/${response.UserId}`;
+        const link = `${environment.WEB_HOST}/#/${VERIFICATIONLINK}/${response.UserId}`;
         this.verifyAcc(response.FirstName, response.Email, link);
       }
     });
