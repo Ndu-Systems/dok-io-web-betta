@@ -1,3 +1,4 @@
+@import '../../assets/sass/variables';
 
 .desktop-ul {
   display: flex;
@@ -23,7 +24,7 @@
       display: none;
     }
   }
-  
+
 
 .ham-icon {
   display: none;
@@ -32,18 +33,7 @@
     display: inline-block;
     cursor: pointer;
     float: right;
-
-    .bar1,
-    .bar2,
-    .bar3 {
-      width: 35px;
-      height: 5px;
-      background-color: #F6F9FC;
-      margin: 6px 0;
-      transition: 0.4s;
-
-    }
-
+    padding: 2rem;
     .change .bar1 {
       transform: rotate(-45deg) translate(-9px, 6px);
     }
@@ -60,13 +50,29 @@
 
 .mobile-nav {
   position: absolute;
-  width: 75%;
-  height: 100%;
-  background: yellow;
+  width: 100%;
+  height: 100vh;
+  background: #29B6F6;
+  background-image: url('../../assets/images/home/nav-mobile-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
   z-index: 100;
-
   animation: moveInRight 1s ease-out .5s;
   animation-fill-mode: backwards;
+  ul {
+    list-style: none;
+    margin-top: 10rem * 2;
+    margin-left: 5rem;
+    li {
+      margin: 2rem;
+      a {
+        cursor: pointer;
+        color:$cloud-white-color;
+        font-weight: 200;
+        font-size: 30px;
+      }
+    }
+  }
 }
 
 /* footer */

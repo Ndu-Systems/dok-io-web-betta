@@ -1,5 +1,5 @@
 .panel {
-  padding-top: 123px;
+
 
   .panel-header {
     margin-bottom: 60px;
@@ -9,6 +9,15 @@
     padding: 2rem 0;
   }
 
+}
+.accounts {
+  background: url('../../../assets/images/home/sign-up-bg.svg');
+  background-size: 40%;
+  background-position-x: 71rem;
+  background-repeat: no-repeat;
+
+  background-repeat: no-repeat;
+  padding-top: 5rem;
 }
 
 
@@ -21,11 +30,11 @@
     background-size: contain;
 
     .panel {
-      padding: 3rem;
+
 
       .panel-body {
         .form {
-          margin-top: 90px;
+          // margin-top: 90px;
         }
       }
     }

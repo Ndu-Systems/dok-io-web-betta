@@ -1,0 +1,39 @@
+// responsive design
+
+// mobile IphoneX
+@media only screen and (max-width: 600px) {
+  .panel-form {
+    h1 {
+      padding: 1rem;
+    }
+    .form {
+      padding: 3rem;
+      width: 100%;
+    }
+  }
+}
+
+// Iphone 5/SE
+@media only screen and (max-width: 320px) {}
+@media only screen and (width: 375px) {
+  .panel-form {
+    h1 {
+      padding: 1rem;
+    }
+    .form {
+      padding-top: 0;
+      width: 100%;
+      .form-group {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+// Iphone 6/7/8
+@media only screen and (max-width: 414px) {}
+
+// mobile Ipad pro
+@media only screen and (width: 1024px) {}
+
+// mobile Ipad
+@media only screen and (width: 768px) {}

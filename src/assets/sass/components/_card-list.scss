@@ -3,6 +3,7 @@
   margin: 0 auto;
   height: 71vh;
   overflow-y: scroll;
+
   &.col-1-of-4 {
     grid-gap: 0;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -73,6 +74,7 @@
         font-weight: 500;
         text-transform: capitalize;
         color: $grey-color;
+
         &.email {
           font-size: 10px;
           margin-top: 1rem;
@@ -83,8 +85,8 @@
           color: $green-color;
           margin-top: 1rem;
 
-          &.no-medical{
-            color:$pink-color;
+          &.no-medical {
+            color: $pink-color;
           }
         }
       }
@@ -99,3 +101,39 @@
   }
 
 }
+
+
+// responsive design
+
+// mobile IphoneX
+@media only screen and (max-width: 600px) {
+  .card-container {
+    padding: 1rem;
+    margin: 0 auto;
+    height: 71vh;
+    overflow-y: scroll;
+
+    &.col-1-of-4 {
+      grid-gap: 0;
+      grid-template-columns: 100%;
+      margin-top: 0.5rem;
+    }
+
+    .card {
+      width: 320px;
+      height: 230px;
+    }
+  }
+}
+
+// Iphone 5/SE
+@media only screen and (max-width: 320px) {}
+
+// Iphone 6/7/8
+@media only screen and (max-width: 414px) {}
+
+// mobile Ipad pro
+@media only screen and (width: 1024px) {}
+
+// mobile Ipad
+@media only screen and (width: 768px) {}
