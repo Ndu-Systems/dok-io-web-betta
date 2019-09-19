@@ -13,6 +13,6 @@ export class CardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.initials = this.fullname.split(' ')[0][0] + this.fullname.split(' ')[1][0];
+    console.log(this.model)
   }
 }

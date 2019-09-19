@@ -4,18 +4,18 @@
       </div>
       <div class="card-circle">
           <h1 class="initials">
-            {{(item.FirstName + ' ' +item.Surname) | initials}}
+            {{(item.firstname + ' ' +item.surname) | initials}}
           </h1>
       </div>
       <div class="card-heading">
-        {{item.FirstName}} {{item.Surname}}
+        {{item.firstname}} {{item.surname}}
       </div>
       <div class="card-details">
           <h1 class="text">
-             {{item.Cellphone}}
+             {{item.cellphone}}
           </h1>
           <h1 class="text email">
-              {{item.Email}}
+              {{item.email}}
           </h1>
           <h1 class="text simple" *ngIf="item.MedicalaidName else noMedicalAid;">
             {{item.MedicalaidName}}
@@ -28,7 +28,7 @@
       </div>
       <div class="card-footer">
         <h1 class="text">
-            {{item.CreateDate | date:'mediumDate'}}
+            {{item.createdate | date:'mediumDate'}}
         </h1>
       </div>
   </div>

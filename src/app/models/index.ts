@@ -9,5 +9,6 @@ export * from './table-model';
 export * from './active-queues-model';
 export * from './nav-model';
 export * from './card-model';
+export * from './modal.eventemitter.model';
 
 

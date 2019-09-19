@@ -61,7 +61,7 @@ closeModal() {
   });
 }
 addcontact(data) {
-  this.emergencyContactService.addEmergencyContact(data).subscribe(response => {    
+  this.emergencyContactService.addEmergencyContact(data).subscribe(response => {
     if (response) {
       this.closeModalAction.emit({
         closeAll: true,

@@ -107,8 +107,8 @@
     .nav-bar-mobile {
       display: block;
       position: fixed;
-      left: 2rem;
-      bottom: 5rem;
+      left: 0;
+      bottom: 0;
       z-index: 9999;
 
 
@@ -116,7 +116,7 @@
         padding-top: 0;
         padding-left: 0;
         list-style: none;
-        width: 90vw;
+        width: 100vw;
         height: 7vh;
         padding: 1rem 0;
         background: $white-color;

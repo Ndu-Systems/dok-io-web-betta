@@ -3,11 +3,8 @@ export interface CloseModalEventEmmiter {
   openAddMedicalAid: boolean;
   openAddEmengencyContact: boolean;
   closeAll: boolean;
-  // optional for confirm box
   closeConfirm?: boolean;
   actionConfirmed?: boolean;
-
-
 }
 
 export interface ExitModalEventEmmiter {
@@ -16,8 +13,9 @@ export interface ExitModalEventEmmiter {
 
 
 export interface PatientSectionsEventEmitter {
-  openAddPatient: boolean;
-  openAddMedicalAid: boolean;
-  openAddEmergencyContact: boolean;
+  openPatientSection: boolean;
+  openPatientContactSection: boolean;
+  openAddMedicalAidSection: boolean;
+  openAddEmergencyContactSection: boolean;
   closeAll: boolean;
 }

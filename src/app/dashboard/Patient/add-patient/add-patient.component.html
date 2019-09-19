@@ -7,12 +7,16 @@
       </h1>
     </div>
   </div>
-  <div class="capture col-1-of-2">
-    <div class="data-capture" *ngIf="true">
-      <app-patient-personal-information></app-patient-personal-information>
+    <div *ngIf="showPersonal">
+      <app-patient-personal-information (patientSection)="updateSectionState($event)"></app-patient-personal-information>
     </div>
-    <div class="vector-image">
-      <img src="assets/images/dashboard/patient-information-image.svg" alt="patient information">
+    <div *ngIf="showContact">
+      <app-patient-contact-information (patientSection)="updateSectionState($event)"></app-patient-contact-information>
     </div>
-  </div>
+    <div *ngIf="showMedical">
+        <app-patient-medical-aid-information (patientSection)="updateSectionState($event)"></app-patient-medical-aid-information>
+    </div>
+    <div *ngIf="showEmergencyContact">
+        <app-patient-emergency-contact-information (patientSection)="updateSectionState($event)"></app-patient-emergency-contact-information>
+    </div>
 </div>

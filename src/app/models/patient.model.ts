@@ -28,4 +28,6 @@ export interface Patient {
   PracticeName?: string;
   DoctorEmail?: string;
   Initials?: string;
+  CreateUserId?: string;
+
 }

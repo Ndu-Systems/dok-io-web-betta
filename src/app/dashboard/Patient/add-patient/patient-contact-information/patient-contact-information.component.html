@@ -1,0 +1,43 @@
+<div class="capture col-1-of-2">
+  <div class=" panel-form">
+   <h1>contact information.</h1>
+   <form [formGroup]="rForm" (ngSubmit)="updatePatient(rForm.value)" action="" class="form">
+     <div class="col-1-of-1">
+       <div class="form-group">
+         <label for="Cellphone">cellphone number</label> <br />
+         <input type="number" class="input-field" formControlName="Cellphone" />
+         <div class="alert" *ngIf="!rForm.controls['Cellphone'].valid && rForm.controls['Cellphone'].touched">
+           cellphone is required
+         </div>
+       </div>
+       <div class="form-group">
+         <label for="Email">email address</label> <br />
+         <input type="email" class="input-field" formControlName="Email" />
+       </div>
+       <div class="form-group">
+         <label for="AddressLine1">street address</label> <br />
+         <input type="text" class="input-field" formControlName="AddressLine1" />
+       </div>
+       <div class="form-group">
+         <label for="Province">province</label> <br />
+         <input type="text" class="input-field" formControlName="Province" />
+       </div>
+       <div class="form-group">
+         <label for="City">city</label> <br />
+         <input type="text" class="input-field" formControlName="City" />
+       </div>
+       <div class="form-group">
+         <label for="PostCode">postal code</label> <br />
+         <input type="text" class="input-field" formControlName="PostCode" />
+       </div>
+     </div>
+     <div class="form-group actions col-1-of-2">
+       <a routerLink="/dashboard/patients" class="cta cancel">abort</a>
+       <input type="submit" value="continue" class="button" [disabled]="!rForm.valid" />
+     </div>
+   </form>
+ </div>
+ <div class="vector-image">
+   <img src="assets/images/dashboard/patient-contact-image.svg" alt="patient contact">
+ </div>
+</div>

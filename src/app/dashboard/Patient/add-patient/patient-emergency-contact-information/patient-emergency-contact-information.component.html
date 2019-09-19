@@ -1,0 +1,39 @@
+<div class="capture col-1-of-2">
+    <div class=" panel-form">
+      <h1>emergency contact information.</h1>
+      <form [formGroup]="rForm" (ngSubmit)="addEmergencyContact(rForm.value)" action="" class="form">
+        <div class="col-1-of-1">
+             <div class="form-group">
+            <label for="Name">name</label> <br />
+            <input type="text" class="input-field" formControlName="Name" />
+            <div class="alert" *ngIf="!rForm.controls['Name'].valid && rForm.controls['Name'].touched">
+              contact name is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Relationship">relationship</label> <br />
+            <input type="text" class="input-field" formControlName="Relationship" />
+            <div class="alert"
+              *ngIf="!rForm.controls['Relationship'].valid && rForm.controls['Relationship'].touched">
+              relationship is required
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="CellNumber">contact number</label> <br />
+            <input type="text" class="input-field" formControlName="CellNumber" />
+            <div class="alert"
+              *ngIf="!rForm.controls['CellNumber'].valid && rForm.controls['CellNumber'].touched">
+              contact number is required
+            </div>
+          </div>
+        </div>
+        <div class="form-group actions col-1-of-2">
+          <a routerLink="/dashboard/patients" class="cta cancel">abort</a>
+          <input type="submit" value="continue" class="button" [disabled]="!rForm.valid" />
+        </div>
+      </form>
+    </div>
+    <div class="vector-image">
+      <img src="assets/images/dashboard/emegrency-contact-image.svg" alt="patient information">
+    </div>
+  </div>

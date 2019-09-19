@@ -2,7 +2,7 @@ import { User, CardModel } from 'src/app/models';
 import { Component, OnInit } from '@angular/core';
 import { PatientService, QueeService, LoginService } from 'src/app/services';
 import { BreadCrumb } from '../bread-crumb/bread-crumb.model';
-import { getCurrentUser, USER_ROLES_STAFF } from 'src/app/shared';
+import { getCurrentUser, USER_ROLES_STAFF, LAST_INSERT_ID } from 'src/app/shared';
 import { MessageService } from 'primeng/api';
 
 @Component({
@@ -60,6 +60,7 @@ export class PatientsComponent implements OnInit {
     });
     this.model = new CardModel();
     this.model.type = 'patients';
+    localStorage.setItem(LAST_INSERT_ID, null);
 
   }
 

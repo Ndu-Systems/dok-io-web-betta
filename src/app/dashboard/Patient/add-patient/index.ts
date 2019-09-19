@@ -2,6 +2,8 @@
 export * from './add-patient.component';
 export * from './patient-personal-information/patient-personal-information.component';
 export * from './patient-medical-aid-information/patient-medical-aid-information.component';
+export * from './patient-contact-information/patient-contact-information.component';
+
 
 // end:ng42.barrel
 

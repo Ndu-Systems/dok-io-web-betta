@@ -27,11 +27,14 @@ import {
   AddPatientComponent,
   AddNoteComponent,
   UpdatePatientComponent,
-  PatientPersonalInformationComponent
+  PatientPersonalInformationComponent,
+  PatientMedicalAidInformationComponent,
+  PatientContactInformationComponent
 } from './Patient';
 import { DashboardNavComponent } from './dashboard-nav';
 import { CardComponent } from './card';
 import { InitialsPipe, AgePipe } from '../shared';
+import { PatientEmergencyContactInformationComponent } from './Patient/add-patient/patient-emergency-contact-information/patient-emergency-contact-information.component';
 
 
 const routes: Routes = [
@@ -83,7 +86,10 @@ export const declarations: Array<any> = [
   QuickRemindersComponent,
   DashboardNavComponent,
   CardComponent,
-  PatientPersonalInformationComponent
+  PatientPersonalInformationComponent,
+  PatientMedicalAidInformationComponent,
+  PatientContactInformationComponent,
+  PatientEmergencyContactInformationComponent
 ];
 
 export const pipes: Array<any> = [

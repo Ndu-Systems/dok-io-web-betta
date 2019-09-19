@@ -1,3 +1,62 @@
-<p>
-  patient-medical-aid-information works!
-</p>
+<div class="capture col-1-of-2">
+  <div class=" panel-form">
+    <h1>medical aid information.</h1>
+    <form [formGroup]="rForm" (ngSubmit)="addMedicalAid(rForm.value)" action="" class="form">
+      <div class="col-1-of-1">
+        <div class="form-group can-toggle demo-rebrand-2">
+            <label for="Title">does a patient have a medical aid plan?</label>
+          <input id="e" type="checkbox" formControlName="HasMedicalAid">
+          <label for="e">
+            <div class="can-toggle__switch" data-checked="Yes" data-unchecked="No"></div>
+            <!-- <div class="can-toggle__label-text">.can-toggle.demo-rebrand-2</div> -->
+          </label>
+        </div>
+        <div class="form-group">
+          <label for="PrimaryMember">primary member</label> <br />
+          <input type="text" class="input-field" formControlName="PrimaryMember" />
+          <div class="alert" *ngIf="!rForm.controls['PrimaryMember'].valid && rForm.controls['PrimaryMember'].touched">
+            primary member is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="PrimaryMemberId">primary id number</label> <br />
+          <input type="text" class="input-field" formControlName="PrimaryMemberId" />
+          <div class="alert" *ngIf="!rForm.controls['PrimaryMemberId'].valid && rForm.controls['PrimaryMemberId'].touched">
+            primary member is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="MemberShipNumber">membership number</label> <br />
+          <input type="text" class="input-field" formControlName="MemberShipNumber" />
+          <div class="alert"
+            *ngIf="!rForm.controls['MemberShipNumber'].valid && rForm.controls['MemberShipNumber'].touched">
+            membership number is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="MedicalaidName">medical aid name</label> <br />
+          <input type="text" class="input-field" formControlName="MedicalaidName" />
+          <div class="alert"
+            *ngIf="!rForm.controls['MedicalaidName'].valid && rForm.controls['MedicalaidName'].touched">
+            medical aid name is required
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="MedicalaidType">plan type</label> <br />
+          <input type="text" class="input-field" formControlName="MedicalaidType" />
+          <div class="alert"
+            *ngIf="!rForm.controls['MedicalaidType'].valid && rForm.controls['MedicalaidType'].touched">
+            plan type is required
+          </div>
+        </div>
+      </div>
+      <div class="form-group actions col-1-of-2">
+        <a routerLink="/dashboard/patients" class="cta cancel">abort</a>
+        <input type="submit" value="continue" class="button" [disabled]="!rForm.valid" />
+      </div>
+    </form>
+  </div>
+  <div class="vector-image">
+    <img src="assets/images/dashboard/patient-medical-aid.svg" alt="patient information">
+  </div>
+</div>
