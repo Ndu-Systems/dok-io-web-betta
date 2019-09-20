@@ -9,6 +9,7 @@ import { AboutUsComponent } from './about-us';
 import { HowItWorksComponent } from './how-it-works';
 import { ForgotPasswordComponent } from './forgot-password';
 import { IndexComponent } from './index/index.component';
+import { HomeNavComponent } from './home-nav';
 
 const routes: Routes = [
  {
@@ -32,7 +33,8 @@ export const declarations: Array<any> = [
   AboutUsComponent,
   HowItWorksComponent,
   ForgotPasswordComponent,
-  IndexComponent
+  IndexComponent,
+  HomeNavComponent
 ];
 
 @NgModule({

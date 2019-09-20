@@ -1,0 +1,30 @@
+<div class="home-nav">
+  <div class="logo">
+    <img src="assets/images/home/icon.svg" alt="hom logo" class="logo">
+  </div>
+  <nav>
+    <ul>
+      <li><a class="active" routerLink="/">home</a></li>
+      <li><a routerLink="/sign-in">sign in</a></li>
+      <li><a routerLink="/sign-up" class="btn sign-up">Sign up for free</a></li>
+    </ul>
+  </nav>
+</div>
+<div class="burger-menu" (click)="toggleNav()">
+  <img src="../../../assets/images/home/burger-menu.svg" alt="burger menu">
+</div>
+<div class="home-mobile-nav" *ngIf="showMobileNavigation">
+
+  <div class="close-menu" (click)="toggleNav()">
+    <img src="assets/images/home/close-menu.svg" alt="close menu">
+  </div>
+  <ul>
+    <li>
+      <a routerLink="/" (click)="toggleNav()" routerLinkActive="active">Home</a>
+    </li>
+    <li>
+      <a routerLink="/sign-in" (click)="toggleNav()" routerLinkActive="active"> Sign in</a>
+    </li>
+    <li><a routerLink="/sign-up" (click)="toggleNav()" class="btn sign-up" routerLinkActive="active">Sign up for free</a></li>
+  </ul>
+</div>

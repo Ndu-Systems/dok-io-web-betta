@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ExitModalEventEmmiter } from '../models/modal.eventemitter.model';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import {APP_VERSION} from './../shared/config'
+import { APP_VERSION } from './../shared/config'
 
 @Component({
   selector: 'app-home',
@@ -13,7 +13,7 @@ export class HomeComponent implements OnInit {
   showSignUp: boolean;
   toggleMobileMenu: boolean;
   rForm: FormGroup;
-  version=APP_VERSION;
+  version = APP_VERSION;
 
   email = '';
   cellphone = '';
@@ -27,22 +27,22 @@ export class HomeComponent implements OnInit {
     this.rForm = this.fb.group({
       name: [null, Validators.required],
       cellphone: [null,
-      Validators.compose([Validators.required,  Validators.minLength(10)])],
-      email : [null, Validators.required]
+        Validators.compose([Validators.required, Validators.minLength(10)])],
+      email: [null, Validators.required]
     });
 
     localStorage.clear();
   }
 
-  ngOnInit() {}
+  ngOnInit() { }
 
-  showLoginModal(){
+  showLoginModal() {
     this.showModal = true;
   }
-  showSignUpModal(){
+  showSignUpModal() {
     this.showSignUp = !this.showSignUp;
   }
-  toggleNavMobile(){
+  toggleNavMobile() {
     this.toggleMobileMenu = !this.toggleMobileMenu;
   }
 
@@ -52,7 +52,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  toggleNav(){
+  toggleNav() {
     this.showMobileNavigation = !this.showMobileNavigation;
   }
 }

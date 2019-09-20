@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="104.529" height="111.609" viewBox="0 0 104.529 111.609">
+  <defs>
+    <filter id="Rectangle_431" x="13.477" y="0" width="91.053" height="91.051" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_433" x="0" y="1.537" width="99.922" height="110.072" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rectangle_432" x="3.139" y="2.516" width="91.053" height="91.051" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="icon" transform="translate(-786.734 -273.953)">
+    <g transform="matrix(1, 0, 0, 1, 786.73, 273.95)" filter="url(#Rectangle_431)">
+      <rect id="Rectangle_431-2" data-name="Rectangle 431" width="54.97" height="54.97" transform="translate(45.71 6) rotate(25)" fill="#29b6f6"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 786.73, 273.95)" filter="url(#Rectangle_433)">
+      <rect id="Rectangle_433-2" data-name="Rectangle 433" width="54.97" height="75.958" transform="translate(41.1 7.54) rotate(25)" fill="#f5f6fa"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 786.73, 273.95)" filter="url(#Rectangle_432)">
+      <rect id="Rectangle_432-2" data-name="Rectangle 432" width="54.97" height="54.97" transform="translate(35.37 8.52) rotate(25)" fill="#017bff"/>
+    </g>
+    <path id="Path_1253" data-name="Path 1253" d="M165.056,45.033H142.5V15h22.556Z" transform="translate(683.522 285.162)" fill="#0042a2"/>
+    <path id="Path_1254" data-name="Path 1254" d="M334.778,45.033H323.5V15h11.278Z" transform="translate(513.8 285.162)" fill="#002659"/>
+    <path id="Path_1255" data-name="Path 1255" d="M204.448,84.425H187.5V60h16.948Z" transform="translate(641.326 242.966)" fill="#fdfefe"/>
+    <path id="Path_1256" data-name="Path 1256" d="M331.974,84.425H323.5V60h8.474Z" transform="translate(513.8 242.966)" fill="#29b6f6"/>
+    <path id="Path_1268" data-name="Path 1268" d="M331.974,84.425H323.5V60h8.474Z" transform="translate(513.8 242.966)" fill="#fdfefe" opacity="0.5"/>
+    <path id="Path_1257" data-name="Path 1257" d="M269.108,226a1.869,1.869,0,0,0-1.869,1.869,1.869,1.869,0,1,0-3.739,0c0,2.284,3.739,4.673,3.739,4.673s3.739-2.389,3.739-4.673A1.869,1.869,0,0,0,269.108,226Z" transform="translate(570.061 87.31)" fill="#ff4757"/>
+    <path id="Path_1258" data-name="Path 1258" d="M325.369,226a1.869,1.869,0,0,0-1.869,1.869v4.673s3.739-2.389,3.739-4.673A1.869,1.869,0,0,0,325.369,226Z" transform="translate(513.8 87.31)" fill="#f30051"/>
+    <path id="Path_1261" data-name="Path 1261" d="M133.139,271.014a5.645,5.645,0,0,1-5.639-5.639V255h1.869v10.375a3.77,3.77,0,0,0,7.539,0V262.6h1.869v2.773A5.645,5.645,0,0,1,133.139,271.014Z" transform="translate(697.587 60.117)" fill="#ebe1dc"/>
+    <path id="Path_1262" data-name="Path 1262" d="M251.3,307.608a2.8,2.8,0,1,1,2.8-2.8A2.807,2.807,0,0,1,251.3,307.608Z" transform="translate(584.127 16.045)" fill="#29b6f6"/>
+    <path id="Path_1263" data-name="Path 1263" d="M293.5,307.608V302a2.8,2.8,0,0,1,0,5.608Z" transform="translate(541.931 16.045)" fill="#017bff"/>
+    <path id="Path_1264" data-name="Path 1264" d="M279.435,332a.935.935,0,1,0,.935.935A.936.936,0,0,0,279.435,332Z" transform="translate(555.996 -12.086)" fill="#fdfefe"/>
+    <path id="Path_1265" data-name="Path 1265" d="M293.5,332v1.869a.935.935,0,0,0,0-1.869Z" transform="translate(541.931 -12.086)" fill="#fdfefe"/>
+    <path id="Path_1266" data-name="Path 1266" d="M15.912,101.216A8.421,8.421,0,0,1,7.5,92.8V90h4.673v1.869h-2.8V92.8a6.543,6.543,0,1,0,13.085,0v-.935h-2.8V90h4.673v2.8A8.421,8.421,0,0,1,15.912,101.216Z" transform="translate(810.11 214.836)" fill="#1b2631"/>
+    <path id="Path_1267" data-name="Path 1267" d="M142.5,101.216V99.346a6.55,6.55,0,0,0,6.543-6.543v-.935h-2.8V90h4.673v2.8A8.421,8.421,0,0,1,142.5,101.216Z" transform="translate(683.522 214.836)" fill="#1b2631"/>
+    <ellipse id="Ellipse_339" data-name="Ellipse 339" cx="1.92" cy="1.792" rx="1.92" ry="1.792" transform="translate(820.386 304.025)" fill="#f5f6fa"/>
+    <ellipse id="Ellipse_340" data-name="Ellipse 340" cx="1.92" cy="1.792" rx="1.92" ry="1.792" transform="translate(827.809 304.025)" fill="#017bff"/>
+    <text id="DOK-IO" transform="translate(816.737 353.225) rotate(25)" fill="#017bff" font-size="9" font-family="Montserrat-Regular, Montserrat"><tspan x="-17.401" y="0">DOK-IO</tspan></text>
+  </g>
+</svg>

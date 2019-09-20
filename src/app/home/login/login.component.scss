@@ -1,11 +1,12 @@
 .accounts {
   background: url('../../../assets/images/home/sign-in-bg.svg');
-  background-size: 40%;
-  background-position-x: 71rem;
+  background-size: 50%;
+  background-position-x: 60rem;
   background-repeat: no-repeat;
   background-repeat: no-repeat;
 
 }
+
 @media only screen and (max-width: 600px) {
   .accounts {
     background: url('../../../assets/images/home/account-mobile-bg.svg');
@@ -43,4 +44,3 @@
     background-size: contain;
   }
 }
-
