@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="77" height="77" viewBox="0 0 77 77">
+  <g id="h4" transform="translate(-1440 -1490)">
+    <circle id="Ellipse_364" data-name="Ellipse 364" cx="38.5" cy="38.5" r="38.5" transform="translate(1440 1490)" fill="#29b6f6" opacity="0.2"/>
+    <g id="calendar" transform="translate(1465 1516)">
+      <path id="Path_1569" data-name="Path 1569" d="M22.225,4V5.759H19.147V4H8.6V5.759H5.517V4H2V8.836H25.742V4Z" transform="translate(0 -2.241)" fill="#29b6f6"/>
+      <path id="Path_1570" data-name="Path 1570" d="M5.517,15H2V33.906H25.742V15H5.517Z" transform="translate(0 -8.405)" fill="#edeada"/>
+      <path id="Path_1571" data-name="Path 1571" d="M22.75,22H10V34.75H26.708V22Zm-3.957.879h3.078v3.078H18.793Zm3.078,7.035H18.793V26.836h3.078Zm-7.035-3.078h3.078v3.078H14.836Zm0-3.957h3.078v3.078H14.836Zm-3.957,0h3.078v3.078H10.879Zm0,3.957h3.078v3.078H10.879Zm3.078,7.035H10.879V30.793h3.078Zm3.957,0H14.836V30.793h3.078Zm3.957,0H18.793V30.793h3.078Zm3.957,0H22.75V30.793h3.078Zm0-3.957H22.75V26.836h3.078ZM22.75,25.957V22.879h3.078v3.078Z" transform="translate(-4.483 -12.327)" fill="#cec9ae"/>
+      <rect id="Rectangle_717" data-name="Rectangle 717" width="4" height="3" transform="translate(5)" fill="#28384c"/>
+      <rect id="Rectangle_718" data-name="Rectangle 718" width="3" height="3" transform="translate(19)" fill="#28384c"/>
+      <rect id="Rectangle_719" data-name="Rectangle 719" width="3" height="4" transform="translate(14 14)" fill="#017bff"/>
+    </g>
+  </g>
+</svg>
